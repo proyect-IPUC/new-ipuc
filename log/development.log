@@ -1,0 +1,351 @@
+  [1m[36m (124.6ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.3ms)[0m  select sqlite_version(*)
+  [1m[36m (133.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateMembrecia (20140612153502)
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "membrecia" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nombre" varchar(255), "apellidos" varchar(255), "telefono" varchar(255), "direccion" varchar(255), "email" varchar(255), "recibioEspiritu" boolean, "fecha" date, "comentarios" text, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140612153502"]]
+  [1m[35m (144.2ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/membrecia" for 127.0.0.1 at 2014-06-12 11:46:20 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MembreciaController#index as HTML
+  [1m[35mMembrecium Load (0.2ms)[0m  SELECT "membrecia".* FROM "membrecia"
+  Rendered membrecia/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 330ms (Views: 320.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/membrecia.css?body=1" for 127.0.0.1 at 2014-06-12 11:46:21 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-12 11:46:21 -0500
+
+
+Started GET "/assets/membrecia.js?body=1" for 127.0.0.1 at 2014-06-12 11:46:21 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-12 11:46:21 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-12 11:46:21 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-12 11:46:21 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-12 11:46:21 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-12 11:46:21 -0500
+
+
+Started GET "/cancions" for 127.0.0.1 at 2014-06-12 11:46:27 -0500
+
+ActionController::RoutingError (No route matches [GET] "/cancions"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/equipo/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/equipo/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/equipo/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/equipo/.rvm/gems/ruby-2.1.1@4.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/equipo/.rvm/gems/ruby-2.1.1@4.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /home/equipo/.rvm/gems/ruby-2.1.1@4.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (24.6ms)
+  Rendered /home/equipo/.rvm/gems/ruby-2.1.1@4.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (57.2ms)
+
+
+Started GET "/membrecia" for 127.0.0.1 at 2014-06-12 11:47:09 -0500
+Processing by MembreciaController#index as HTML
+  [1m[36mMembrecium Load (0.2ms)[0m  [1mSELECT "membrecia".* FROM "membrecia"[0m
+  Rendered membrecia/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/membrecia.css?body=1" for 127.0.0.1 at 2014-06-12 11:47:09 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-12 11:47:09 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-12 11:47:09 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-12 11:47:09 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-12 11:47:09 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-12 11:47:09 -0500
+
+
+Started GET "/assets/membrecia.js?body=1" for 127.0.0.1 at 2014-06-12 11:47:09 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-12 11:47:09 -0500
+
+
+Started GET "/membrecia" for 127.0.0.1 at 2014-06-12 11:50:52 -0500
+Processing by MembreciaController#index as HTML
+  [1m[35mMembrecium Load (0.1ms)[0m  SELECT "membrecia".* FROM "membrecia"
+  Rendered membrecia/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/membrecia.css?body=1" for 127.0.0.1 at 2014-06-12 11:50:52 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-12 11:50:52 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-12 11:50:52 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-12 11:50:52 -0500
+
+
+Started GET "/assets/membrecia.js?body=1" for 127.0.0.1 at 2014-06-12 11:50:52 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-12 11:50:52 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-12 11:50:52 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-12 11:50:52 -0500
+
+
+Started GET "/membrecia/new" for 127.0.0.1 at 2014-06-12 11:50:56 -0500
+Processing by MembreciaController#new as HTML
+  Rendered membrecia/_form.html.erb (29.4ms)
+  Rendered membrecia/new.html.erb within layouts/application (30.5ms)
+Completed 200 OK in 36ms (Views: 34.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/membrecia" for 127.0.0.1 at 2014-06-12 12:44:22 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MembreciaController#index as HTML
+  [1m[35mMembrecium Load (0.2ms)[0m  SELECT "membrecia".* FROM "membrecia"
+  Rendered membrecia/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 511ms (Views: 489.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/membrecia.css?body=1" for 127.0.0.1 at 2014-06-12 12:44:23 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-12 12:44:23 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-12 12:44:23 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-12 12:44:23 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-12 12:44:23 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-12 12:44:23 -0500
+
+
+Started GET "/assets/membrecia.js?body=1" for 127.0.0.1 at 2014-06-12 12:44:23 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-12 12:44:23 -0500
+
+
+Started GET "/membrecia/new" for 127.0.0.1 at 2014-06-12 12:50:44 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MembreciaController#new as HTML
+  Rendered membrecia/_form.html.erb (144.5ms)
+  Rendered membrecia/new.html.erb within layouts/application (159.1ms)
+Completed 200 OK in 232ms (Views: 212.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/membrecia.css?body=1" for 127.0.0.1 at 2014-06-12 12:50:45 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-12 12:50:45 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-12 12:50:45 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-12 12:50:45 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-12 12:50:45 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-12 12:50:45 -0500
+
+
+Started GET "/assets/membrecia.js?body=1" for 127.0.0.1 at 2014-06-12 12:50:45 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-12 12:50:45 -0500
+
+
+Started POST "/membrecia" for 127.0.0.1 at 2014-06-12 12:51:36 -0500
+Processing by MembreciaController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cgvKUzYGKE6bucesEpyeX8eykfc/dGPRhbTzQgY3BL4=", "membrecium"=>{"nombre"=>"Bryan", "apellidos"=>"Villamil Acevedo", "telefono"=>"5162219", "direccion"=>"cra 39 n 78-70", "email"=>"bryanvillamilacevedo@gmail.com", "recibioEspiritu"=>"1", "fecha(1i)"=>"2009", "fecha(2i)"=>"11", "fecha(3i)"=>"12", "comentarios"=>""}, "commit"=>"Guardar"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (11.6ms)[0m  [1mINSERT INTO "membrecia" ("apellidos", "comentarios", "created_at", "direccion", "email", "fecha", "nombre", "recibioEspiritu", "telefono", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["apellidos", "Villamil Acevedo"], ["comentarios", ""], ["created_at", "2014-06-12 17:51:36.233154"], ["direccion", "cra 39 n 78-70"], ["email", "bryanvillamilacevedo@gmail.com"], ["fecha", "2009-11-12"], ["nombre", "Bryan"], ["recibioEspiritu", "t"], ["telefono", "5162219"], ["updated_at", "2014-06-12 17:51:36.233154"]]
+  [1m[35m (160.3ms)[0m  commit transaction
+Redirected to http://localhost:3000/membrecia/1
+Completed 302 Found in 232ms (ActiveRecord: 171.9ms)
+
+
+Started GET "/membrecia/1" for 127.0.0.1 at 2014-06-12 12:51:36 -0500
+Processing by MembreciaController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMembrecium Load (0.3ms)[0m  [1mSELECT  "membrecia".* FROM "membrecia"  WHERE "membrecia"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered membrecia/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 10ms (Views: 5.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/membrecia.css?body=1" for 127.0.0.1 at 2014-06-12 12:51:36 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-12 12:51:36 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-12 12:51:36 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-12 12:51:36 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-12 12:51:36 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-12 12:51:36 -0500
+
+
+Started GET "/assets/membrecia.js?body=1" for 127.0.0.1 at 2014-06-12 12:51:36 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-12 12:51:36 -0500
+
+
+Started GET "/membrecia" for 127.0.0.1 at 2014-06-12 12:51:40 -0500
+Processing by MembreciaController#index as HTML
+  [1m[35mMembrecium Load (0.2ms)[0m  SELECT "membrecia".* FROM "membrecia"
+  Rendered membrecia/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 9ms (Views: 6.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/membrecia" for 127.0.0.1 at 2014-06-12 12:54:14 -0500
+Processing by MembreciaController#index as HTML
+  [1m[36mMembrecium Load (0.3ms)[0m  [1mSELECT "membrecia".* FROM "membrecia"[0m
+  Rendered membrecia/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 210ms (Views: 208.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/membrecia.css?body=1" for 127.0.0.1 at 2014-06-12 12:54:15 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-12 12:54:15 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-12 12:54:15 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-12 12:54:15 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-12 12:54:15 -0500
+
+
+Started GET "/assets/membrecia.js?body=1" for 127.0.0.1 at 2014-06-12 12:54:15 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-12 12:54:15 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-12 12:54:15 -0500
+
+
+Started GET "/membrecia" for 127.0.0.1 at 2014-06-12 12:54:28 -0500
+Processing by MembreciaController#index as HTML
+  [1m[35mMembrecium Load (0.2ms)[0m  SELECT "membrecia".* FROM "membrecia"
+  Rendered membrecia/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 29ms (Views: 27.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/membrecia.css?body=1" for 127.0.0.1 at 2014-06-12 12:54:28 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-12 12:54:28 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-12 12:54:28 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-12 12:54:28 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-12 12:54:28 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-12 12:54:28 -0500
+
+
+Started GET "/assets/membrecia.js?body=1" for 127.0.0.1 at 2014-06-12 12:54:28 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-12 12:54:28 -0500
+
+
+Started GET "/membrecia" for 127.0.0.1 at 2014-06-12 12:54:37 -0500
+Processing by MembreciaController#index as HTML
+  [1m[36mMembrecium Load (0.2ms)[0m  [1mSELECT "membrecia".* FROM "membrecia"[0m
+  Rendered membrecia/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 32ms (Views: 30.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/membrecia.css?body=1" for 127.0.0.1 at 2014-06-12 12:54:37 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-12 12:54:37 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-12 12:54:37 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-12 12:54:37 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-12 12:54:37 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-12 12:54:37 -0500
+
+
+Started GET "/assets/membrecia.js?body=1" for 127.0.0.1 at 2014-06-12 12:54:37 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-12 12:54:37 -0500

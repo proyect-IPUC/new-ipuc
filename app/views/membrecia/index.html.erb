@@ -1,0 +1,39 @@
+<h1>Listado de Membrecia</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Apellidos</th>
+      <th>Telefono</th>
+      <th>Direccion</th>
+      <th>Email</th>
+      <th>RecibioEspirituSanto</th>
+      <th>Fecha</th>
+      <th>Comentarios</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @membrecia.each do |membrecium| %>
+      <tr>
+        <td><%= membrecium.nombre %></td>
+        <td><%= membrecium.apellidos %></td>
+        <td><%= membrecium.telefono %></td>
+        <td><%= membrecium.direccion %></td>
+        <td><%= membrecium.email %></td>
+        <td><%= membrecium.recibioEspiritu %></td>
+        <td><%= membrecium.fecha %></td>
+        <td><%= membrecium.comentarios %></td>
+        <td><%= link_to 'Ver', membrecium %></td>
+        <td><%= link_to 'Editar', edit_membrecium_path(membrecium) %></td>
+        <td><%= link_to 'Eliminar', membrecium, method: :delete, data: { confirm: 'Esta Seguro?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Nuevo Ingreso de Membrecia', new_membrecium_path %>

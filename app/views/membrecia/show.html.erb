@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @membrecium.nombre %>
+</p>
+
+<p>
+  <strong>Apellidos:</strong>
+  <%= @membrecium.apellidos %>
+</p>
+
+<p>
+  <strong>Telefono:</strong>
+  <%= @membrecium.telefono %>
+</p>
+
+<p>
+  <strong>Direccion:</strong>
+  <%= @membrecium.direccion %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @membrecium.email %>
+</p>
+
+<p>
+  <strong>Recibioespiritu:</strong>
+  <%= @membrecium.recibioEspiritu %>
+</p>
+
+<p>
+  <strong>Fecha:</strong>
+  <%= @membrecium.fecha %>
+</p>
+
+<p>
+  <strong>Comentarios:</strong>
+  <%= @membrecium.comentarios %>
+</p>
+
+<%= link_to 'Editar', edit_membrecium_path(@membrecium) %> |
+<%= link_to 'Atras', membrecia_path %>
