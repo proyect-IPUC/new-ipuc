@@ -1,49 +1,15 @@
-<%= form_for(@membrecium) do |f| %>
-  <% if @membrecium.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@membrecium.errors.count, "error") %> prohibited this membrecium from being saved:</h2>
-
-      <ul>
-      <% @membrecium.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label :nombre %><br>
-    <%= f.text_field :nombre %>
-  </div>
-  <div class="field">
-    <%= f.label :apellidos %><br>
-    <%= f.text_field :apellidos %>
-  </div>
-  <div class="field">
-    <%= f.label :telefono %><br>
-    <%= f.text_field :telefono %>
-  </div>
-  <div class="field">
-    <%= f.label :direccion %><br>
-    <%= f.text_field :direccion %>
-  </div>
-  <div class="field">
-    <%= f.label :email %><br>
-    <%= f.text_field :email %>
-  </div>
-  <div class="field">
-    <%= f.label :recibio_Espiritu_Santo? %><br>
-    <%= f.check_box :recibioEspiritu %>
-  </div>
-  <div class="field">
-    <%= f.label :fecha %><br>
-    <%= f.date_select :fecha %>
-  </div>
-  <div class="field">
-    <%= f.label :comentarios %><br>
-    <%= f.text_area :comentarios %>
-  </div>
-  <div class="actions">
-    <%= f.submit "Guardar" %>
+<%= simple_form_for @membrecium, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :nombre %>
+  <%= f.input :apellidos %>
+  <%= f.input :telefono %>
+  <%= f.input :direccion %>
+  <%= f.input :email %>
+  <%= f.input :recibioEspiritu %>
+  <%= f.input :fecha %>
+  <%= f.input :comentarios %>
+  <div class="form-actions">
+    <%= f.button :submit, :class => 'btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                membrecia_path, :class => 'btn' %>
   </div>
 <% end %>

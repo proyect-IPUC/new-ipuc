@@ -1,44 +1,35 @@
-<p id="notice"><%= notice %></p>
+<%- model_class = Membrecium -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.titleize %></h1>
+</div>
 
-<p>
-  <strong>Nombre:</strong>
-  <%= @membrecium.nombre %>
-</p>
+<dl class="dl-horizontal">
+  <dt><strong><%= model_class.human_attribute_name(:nombre) %>:</strong></dt>
+  <dd><%= @membrecium.nombre %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:apellidos) %>:</strong></dt>
+  <dd><%= @membrecium.apellidos %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:telefono) %>:</strong></dt>
+  <dd><%= @membrecium.telefono %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:direccion) %>:</strong></dt>
+  <dd><%= @membrecium.direccion %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:email) %>:</strong></dt>
+  <dd><%= @membrecium.email %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:recibioEspiritu) %>:</strong></dt>
+  <dd><%= @membrecium.recibioEspiritu %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:fecha) %>:</strong></dt>
+  <dd><%= @membrecium.fecha %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:comentarios) %>:</strong></dt>
+  <dd><%= @membrecium.comentarios %></dd>
+</dl>
 
-<p>
-  <strong>Apellidos:</strong>
-  <%= @membrecium.apellidos %>
-</p>
-
-<p>
-  <strong>Telefono:</strong>
-  <%= @membrecium.telefono %>
-</p>
-
-<p>
-  <strong>Direccion:</strong>
-  <%= @membrecium.direccion %>
-</p>
-
-<p>
-  <strong>Email:</strong>
-  <%= @membrecium.email %>
-</p>
-
-<p>
-  <strong>Recibioespiritu:</strong>
-  <%= @membrecium.recibioEspiritu %>
-</p>
-
-<p>
-  <strong>Fecha:</strong>
-  <%= @membrecium.fecha %>
-</p>
-
-<p>
-  <strong>Comentarios:</strong>
-  <%= @membrecium.comentarios %>
-</p>
-
-<%= link_to 'Editar', edit_membrecium_path(@membrecium) %> |
-<%= link_to 'Atras', membrecia_path %>
+<div class="form-actions">
+  <%= link_to t('.back', :default => t("helpers.links.back")),
+              membrecia_path, :class => 'btn'  %>
+  <%= link_to t('.edit', :default => t("helpers.links.edit")),
+              edit_membrecium_path(@membrecium), :class => 'btn' %>
+  <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+              membrecium_path(@membrecium),
+              :method => 'delete',
+              :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+              :class => 'btn btn-danger' %>
+</div>

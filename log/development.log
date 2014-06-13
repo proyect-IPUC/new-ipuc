@@ -349,3 +349,1412 @@ Started GET "/assets/membrecia.js?body=1" for 127.0.0.1 at 2014-06-12 12:54:37 -
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-12 12:54:37 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/membrecia" for 127.0.0.1 at 2014-06-13 14:25:46 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MembreciaController#index as HTML
+  [1m[35mMembrecium Load (0.2ms)[0m  SELECT "membrecia".* FROM "membrecia"
+  Rendered membrecia/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 248ms (Views: 238.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/membrecia.css?body=1" for 127.0.0.1 at 2014-06-13 14:25:47 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-13 14:25:47 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-13 14:25:47 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-13 14:25:47 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-13 14:25:47 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-13 14:25:47 -0500
+
+
+Started GET "/assets/membrecia.js?body=1" for 127.0.0.1 at 2014-06-13 14:25:47 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-13 14:25:47 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/membrecia" for 127.0.0.1 at 2014-06-13 14:33:04 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MembreciaController#index as HTML
+  [1m[35mMembrecium Load (0.2ms)[0m  SELECT "membrecia".* FROM "membrecia"
+  Rendered membrecia/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 48ms (Views: 38.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/membrecia.css?body=1" for 127.0.0.1 at 2014-06-13 14:33:04 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-13 14:33:04 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-13 14:33:04 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-13 14:33:04 -0500
+
+
+Started GET "/assets/membrecia.js?body=1" for 127.0.0.1 at 2014-06-13 14:33:04 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-13 14:33:04 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-13 14:33:04 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-13 14:33:04 -0500
+
+
+Started GET "/membrecia" for 127.0.0.1 at 2014-06-13 14:33:06 -0500
+Processing by MembreciaController#index as HTML
+  [1m[36mMembrecium Load (0.1ms)[0m  [1mSELECT "membrecia".* FROM "membrecia"[0m
+  Rendered membrecia/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/membrecia.css?body=1" for 127.0.0.1 at 2014-06-13 14:33:06 -0500
+
+
+Started GET "/assets/membrecia.js?body=1" for 127.0.0.1 at 2014-06-13 14:33:06 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-13 14:33:06 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-13 14:33:06 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-13 14:33:06 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-13 14:33:06 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-13 14:33:06 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-13 14:33:06 -0500
+
+
+Started GET "/membrecia" for 127.0.0.1 at 2014-06-13 14:33:06 -0500
+Processing by MembreciaController#index as HTML
+  [1m[35mMembrecium Load (0.2ms)[0m  SELECT "membrecia".* FROM "membrecia"
+  Rendered membrecia/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/membrecia.css?body=1" for 127.0.0.1 at 2014-06-13 14:33:06 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-13 14:33:06 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-13 14:33:06 -0500
+
+
+Started GET "/assets/membrecia.js?body=1" for 127.0.0.1 at 2014-06-13 14:33:06 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-13 14:33:06 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-13 14:33:06 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-13 14:33:06 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-13 14:33:06 -0500
+
+
+Started GET "/membrecia" for 127.0.0.1 at 2014-06-13 14:33:06 -0500
+Processing by MembreciaController#index as HTML
+  [1m[36mMembrecium Load (0.1ms)[0m  [1mSELECT "membrecia".* FROM "membrecia"[0m
+  Rendered membrecia/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/membrecia.css?body=1" for 127.0.0.1 at 2014-06-13 14:33:06 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-13 14:33:06 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-13 14:33:06 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-13 14:33:06 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-13 14:33:06 -0500
+
+
+Started GET "/assets/membrecia.js?body=1" for 127.0.0.1 at 2014-06-13 14:33:06 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-13 14:33:06 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-13 14:33:06 -0500
+
+
+Started GET "/membrecia" for 127.0.0.1 at 2014-06-13 14:33:06 -0500
+Processing by MembreciaController#index as HTML
+  [1m[35mMembrecium Load (0.1ms)[0m  SELECT "membrecia".* FROM "membrecia"
+  Rendered membrecia/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/membrecia.css?body=1" for 127.0.0.1 at 2014-06-13 14:33:06 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-13 14:33:07 -0500
+
+
+Started GET "/assets/membrecia.js?body=1" for 127.0.0.1 at 2014-06-13 14:33:07 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-13 14:33:07 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-13 14:33:07 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-13 14:33:07 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-13 14:33:07 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-13 14:33:07 -0500
+
+
+Started GET "/membrecia" for 127.0.0.1 at 2014-06-13 14:33:07 -0500
+Processing by MembreciaController#index as HTML
+  [1m[36mMembrecium Load (0.1ms)[0m  [1mSELECT "membrecia".* FROM "membrecia"[0m
+  Rendered membrecia/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/membrecia.css?body=1" for 127.0.0.1 at 2014-06-13 14:33:07 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-13 14:33:07 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-13 14:33:07 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-13 14:33:07 -0500
+
+
+Started GET "/assets/membrecia.js?body=1" for 127.0.0.1 at 2014-06-13 14:33:07 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-13 14:33:07 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-13 14:33:07 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-13 14:33:07 -0500
+
+
+Started GET "/membrecia" for 127.0.0.1 at 2014-06-13 14:33:07 -0500
+Processing by MembreciaController#index as HTML
+  [1m[35mMembrecium Load (0.2ms)[0m  SELECT "membrecia".* FROM "membrecia"
+  Rendered membrecia/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/membrecia.css?body=1" for 127.0.0.1 at 2014-06-13 14:33:07 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-13 14:33:07 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-13 14:33:07 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-13 14:33:07 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-13 14:33:07 -0500
+
+
+Started GET "/assets/membrecia.js?body=1" for 127.0.0.1 at 2014-06-13 14:33:07 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-13 14:33:07 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-13 14:33:07 -0500
+
+
+Started GET "/clientes" for 127.0.0.1 at 2014-06-13 14:33:18 -0500
+
+ActionController::RoutingError (No route matches [GET] "/clientes"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/salomon/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/salomon/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/salomon/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/salomon/.rvm/gems/ruby-2.1.1@4.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /home/salomon/.rvm/gems/ruby-2.1.1@4.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /home/salomon/.rvm/gems/ruby-2.1.1@4.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.1ms)
+  Rendered /home/salomon/.rvm/gems/ruby-2.1.1@4.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (21.6ms)
+
+
+Started GET "/cancions" for 127.0.0.1 at 2014-06-13 14:33:24 -0500
+
+ActionController::RoutingError (No route matches [GET] "/cancions"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/salomon/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/salomon/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/salomon/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/salomon/.rvm/gems/ruby-2.1.1@4.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/salomon/.rvm/gems/ruby-2.1.1@4.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /home/salomon/.rvm/gems/ruby-2.1.1@4.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /home/salomon/.rvm/gems/ruby-2.1.1@4.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (16.0ms)
+
+
+Started GET "/canciones" for 127.0.0.1 at 2014-06-13 14:33:28 -0500
+
+ActionController::RoutingError (No route matches [GET] "/canciones"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/salomon/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/salomon/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/salomon/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/salomon/.rvm/gems/ruby-2.1.1@4.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /home/salomon/.rvm/gems/ruby-2.1.1@4.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+  Rendered /home/salomon/.rvm/gems/ruby-2.1.1@4.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /home/salomon/.rvm/gems/ruby-2.1.1@4.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (14.2ms)
+
+
+Started GET "/membrecia" for 127.0.0.1 at 2014-06-13 14:33:34 -0500
+Processing by MembreciaController#index as HTML
+  [1m[36mMembrecium Load (0.2ms)[0m  [1mSELECT "membrecia".* FROM "membrecia"[0m
+  Rendered membrecia/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/membrecia.css?body=1" for 127.0.0.1 at 2014-06-13 14:33:34 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-13 14:33:34 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-13 14:33:34 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-13 14:33:34 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-13 14:33:34 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-13 14:33:34 -0500
+
+
+Started GET "/assets/membrecia.js?body=1" for 127.0.0.1 at 2014-06-13 14:33:34 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-13 14:33:34 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/membrecia" for 127.0.0.1 at 2014-06-13 14:35:28 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MembreciaController#index as HTML
+  [1m[35mMembrecium Load (0.2ms)[0m  SELECT "membrecia".* FROM "membrecia"
+  Rendered membrecia/index.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 66ms (Views: 55.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/membrecia.css?body=1" for 127.0.0.1 at 2014-06-13 14:35:28 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-13 14:35:28 -0500
+
+
+Started GET "/assets/membrecia.js?body=1" for 127.0.0.1 at 2014-06-13 14:35:28 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-13 14:35:28 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-13 14:35:28 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-13 14:35:28 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-13 14:35:28 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-13 14:35:28 -0500
+
+
+Started GET "/membrecia/new" for 127.0.0.1 at 2014-06-13 14:35:40 -0500
+Processing by MembreciaController#new as HTML
+  Rendered membrecia/_form.html.erb (94.2ms)
+  Rendered membrecia/new.html.erb within layouts/application (99.5ms)
+Completed 200 OK in 105ms (Views: 104.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/canciones" for 127.0.0.1 at 2014-06-13 14:36:03 -0500
+
+ActionController::RoutingError (No route matches [GET] "/canciones"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/salomon/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/salomon/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/salomon/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/salomon/.rvm/gems/ruby-2.1.1@4.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /home/salomon/.rvm/gems/ruby-2.1.1@4.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /home/salomon/.rvm/gems/ruby-2.1.1@4.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /home/salomon/.rvm/gems/ruby-2.1.1@4.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (15.2ms)
+
+
+Started GET "/canciones/new" for 127.0.0.1 at 2014-06-13 14:36:21 -0500
+
+ActionController::RoutingError (No route matches [GET] "/canciones/new"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/salomon/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/salomon/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/salomon/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/salomon/.rvm/gems/ruby-2.1.1@4.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /home/salomon/.rvm/gems/ruby-2.1.1@4.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /home/salomon/.rvm/gems/ruby-2.1.1@4.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /home/salomon/.rvm/gems/ruby-2.1.1@4.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (18.1ms)
+
+
+Started GET "/zombies" for 127.0.0.1 at 2014-06-13 14:36:32 -0500
+
+ActionController::RoutingError (No route matches [GET] "/zombies"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/salomon/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/salomon/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/salomon/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/salomon/.rvm/gems/ruby-2.1.1@4.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /home/salomon/.rvm/gems/ruby-2.1.1@4.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /home/salomon/.rvm/gems/ruby-2.1.1@4.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /home/salomon/.rvm/gems/ruby-2.1.1@4.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (15.4ms)
+
+
+Started GET "/clientes" for 127.0.0.1 at 2014-06-13 14:36:37 -0500
+
+ActionController::RoutingError (No route matches [GET] "/clientes"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/salomon/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/salomon/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/salomon/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/salomon/.rvm/gems/ruby-2.1.1@4.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/salomon/.rvm/gems/ruby-2.1.1@4.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /home/salomon/.rvm/gems/ruby-2.1.1@4.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /home/salomon/.rvm/gems/ruby-2.1.1@4.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (16.1ms)
+
+
+Started GET "/cancions" for 127.0.0.1 at 2014-06-13 14:36:41 -0500
+
+ActionController::RoutingError (No route matches [GET] "/cancions"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/salomon/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/salomon/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/salomon/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/salomon/.rvm/gems/ruby-2.1.1@4.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/salomon/.rvm/gems/ruby-2.1.1@4.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /home/salomon/.rvm/gems/ruby-2.1.1@4.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /home/salomon/.rvm/gems/ruby-2.1.1@4.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (15.4ms)
+
+
+Started GET "/canciones" for 127.0.0.1 at 2014-06-13 14:36:44 -0500
+
+ActionController::RoutingError (No route matches [GET] "/canciones"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/salomon/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/salomon/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/salomon/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/salomon/.rvm/gems/ruby-2.1.1@4.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /home/salomon/.rvm/gems/ruby-2.1.1@4.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /home/salomon/.rvm/gems/ruby-2.1.1@4.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /home/salomon/.rvm/gems/ruby-2.1.1@4.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (14.6ms)
+
+
+Started GET "/cancion" for 127.0.0.1 at 2014-06-13 14:36:49 -0500
+
+ActionController::RoutingError (No route matches [GET] "/cancion"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/salomon/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/salomon/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/salomon/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/salomon/.rvm/gems/ruby-2.1.1@4.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/salomon/.rvm/gems/ruby-2.1.1@4.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /home/salomon/.rvm/gems/ruby-2.1.1@4.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /home/salomon/.rvm/gems/ruby-2.1.1@4.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (17.5ms)
+
+
+Started GET "/membrecia/1/edit" for 127.0.0.1 at 2014-06-13 14:37:07 -0500
+Processing by MembreciaController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMembrecium Load (0.2ms)[0m  [1mSELECT  "membrecia".* FROM "membrecia"  WHERE "membrecia"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered membrecia/_form.html.erb (16.5ms)
+  Rendered membrecia/edit.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 25ms (Views: 22.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/membrecia" for 127.0.0.1 at 2014-06-13 14:37:11 -0500
+Processing by MembreciaController#index as HTML
+  [1m[35mMembrecium Load (0.2ms)[0m  SELECT "membrecia".* FROM "membrecia"
+  Rendered membrecia/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/membrecia" for 127.0.0.1 at 2014-06-13 14:43:07 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MembreciaController#index as HTML
+  [1m[35mMembrecium Load (0.2ms)[0m  SELECT "membrecia".* FROM "membrecia"
+  Rendered membrecia/index.html.erb within layouts/application (19.2ms)
+Completed 200 OK in 69ms (Views: 57.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/membrecia.css?body=1" for 127.0.0.1 at 2014-06-13 14:43:08 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-13 14:43:08 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-13 14:43:08 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-13 14:43:08 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-13 14:43:08 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-13 14:43:08 -0500
+
+
+Started GET "/assets/membrecia.js?body=1" for 127.0.0.1 at 2014-06-13 14:43:08 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-13 14:43:08 -0500
+
+
+Started GET "/membrecia/new" for 127.0.0.1 at 2014-06-13 14:43:11 -0500
+Processing by MembreciaController#new as HTML
+  Rendered membrecia/_form.html.erb (43.6ms)
+  Rendered membrecia/new.html.erb within layouts/application (46.5ms)
+Completed 200 OK in 51ms (Views: 50.8ms | ActiveRecord: 0.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/membrecia" for 127.0.0.1 at 2014-06-13 14:58:28 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MembreciaController#index as HTML
+  [1m[35mMembrecium Load (0.2ms)[0m  SELECT "membrecia".* FROM "membrecia"
+  Rendered membrecia/index.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 913ms (Views: 902.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-06-13 14:58:29 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-13 14:58:29 -0500
+
+
+Started GET "/assets/membrecia.css?body=1" for 127.0.0.1 at 2014-06-13 14:58:29 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-13 14:58:29 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-13 14:58:29 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-13 14:58:29 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-13 14:58:29 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-13 14:58:29 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-13 14:58:29 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-13 14:58:29 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-13 14:58:29 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-13 14:58:29 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-13 14:58:29 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-13 14:58:29 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-13 14:58:29 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-13 14:58:29 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-13 14:58:29 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-13 14:58:29 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-13 14:58:29 -0500
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-13 14:58:29 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-13 14:58:29 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-13 14:58:29 -0500
+
+
+Started GET "/assets/membrecia.js?body=1" for 127.0.0.1 at 2014-06-13 14:58:29 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-13 14:58:29 -0500
+
+
+Started GET "/membrecia/new" for 127.0.0.1 at 2014-06-13 14:58:40 -0500
+Processing by MembreciaController#new as HTML
+  Rendered membrecia/_form.html.erb (85.6ms)
+  Rendered membrecia/new.html.erb within layouts/application (90.6ms)
+Completed 200 OK in 100ms (Views: 99.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/membrecia" for 127.0.0.1 at 2014-06-13 15:43:27 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MembreciaController#index as HTML
+  [1m[35mMembrecium Load (0.2ms)[0m  SELECT "membrecia".* FROM "membrecia"
+  Rendered membrecia/index.html.erb within layouts/application (17.7ms)
+Completed 200 OK in 114ms (Views: 103.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-06-13 15:43:27 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-13 15:43:27 -0500
+
+
+Started GET "/assets/membrecia.css?body=1" for 127.0.0.1 at 2014-06-13 15:43:27 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-13 15:43:27 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-13 15:43:27 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-13 15:43:27 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-13 15:43:27 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-13 15:43:27 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-13 15:43:27 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-13 15:43:27 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-13 15:43:27 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-13 15:43:27 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-13 15:43:27 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-13 15:43:27 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-13 15:43:27 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-13 15:43:27 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-13 15:43:27 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-13 15:43:27 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-13 15:43:27 -0500
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-13 15:43:27 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-13 15:43:27 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-13 15:43:27 -0500
+
+
+Started GET "/assets/membrecia.js?body=1" for 127.0.0.1 at 2014-06-13 15:43:27 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-13 15:43:27 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateDirectivas (20140613204731)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "directivas" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nombre" varchar(255), "apellido" varchar(255), "cargo" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140613204731"]]
+  [1m[36m (133.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/directivas" for 127.0.0.1 at 2014-06-13 15:49:28 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by DirectivasController#index as HTML
+  [1m[35mDirectiva Load (0.1ms)[0m  SELECT "directivas".* FROM "directivas"
+  Rendered directivas/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 167ms (Views: 155.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-06-13 15:49:28 -0500
+
+
+Started GET "/assets/membrecia.css?body=1" for 127.0.0.1 at 2014-06-13 15:49:28 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-13 15:49:28 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-13 15:49:28 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-13 15:49:28 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-13 15:49:28 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-13 15:49:28 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-13 15:49:28 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-13 15:49:28 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-13 15:49:28 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-13 15:49:28 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-13 15:49:28 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-13 15:49:28 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-13 15:49:28 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-13 15:49:28 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-13 15:49:28 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-13 15:49:28 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-13 15:49:28 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-13 15:49:28 -0500
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-13 15:49:28 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-13 15:49:28 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-13 15:49:28 -0500
+
+
+Started GET "/assets/directivas.js?body=1" for 127.0.0.1 at 2014-06-13 15:49:28 -0500
+
+
+Started GET "/assets/membrecia.js?body=1" for 127.0.0.1 at 2014-06-13 15:49:28 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-13 15:49:28 -0500
+
+
+Started GET "/directivas/new" for 127.0.0.1 at 2014-06-13 15:49:30 -0500
+Processing by DirectivasController#new as HTML
+  Rendered directivas/_form.html.erb (32.3ms)
+  Rendered directivas/new.html.erb within layouts/application (35.3ms)
+Completed 200 OK in 45ms (Views: 43.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/directivas" for 127.0.0.1 at 2014-06-13 15:50:01 -0500
+Processing by DirectivasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LYgXrjwZGHY6kglKATCFyFiaJLD4UAmx3S9OhyetrTI=", "directiva"=>{"nombre"=>"Juan pablo", "apellido"=>"Montero", "cargo"=>"Pastor"}, "commit"=>"Create Directiva"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "directivas" ("apellido", "cargo", "created_at", "nombre", "updated_at") VALUES (?, ?, ?, ?, ?)  [["apellido", "Montero"], ["cargo", "Pastor"], ["created_at", "2014-06-13 20:50:01.069105"], ["nombre", "Juan pablo"], ["updated_at", "2014-06-13 20:50:01.069105"]]
+  [1m[36m (180.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/directivas/1
+Completed 302 Found in 214ms (ActiveRecord: 181.0ms)
+
+
+Started GET "/directivas/1" for 127.0.0.1 at 2014-06-13 15:50:01 -0500
+Processing by DirectivasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mDirectiva Load (0.2ms)[0m  SELECT  "directivas".* FROM "directivas"  WHERE "directivas"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered directivas/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 13ms (Views: 10.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-06-13 15:50:01 -0500
+
+
+Started GET "/assets/membrecia.css?body=1" for 127.0.0.1 at 2014-06-13 15:50:01 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-13 15:50:01 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-13 15:50:01 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-13 15:50:01 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-13 15:50:01 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-13 15:50:01 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-13 15:50:01 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-13 15:50:01 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-13 15:50:01 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-13 15:50:01 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-13 15:50:01 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-13 15:50:01 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-13 15:50:01 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-13 15:50:01 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-13 15:50:01 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-13 15:50:01 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-13 15:50:01 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-13 15:50:01 -0500
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-13 15:50:01 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-13 15:50:01 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-13 15:50:01 -0500
+
+
+Started GET "/assets/directivas.js?body=1" for 127.0.0.1 at 2014-06-13 15:50:01 -0500
+
+
+Started GET "/assets/membrecia.js?body=1" for 127.0.0.1 at 2014-06-13 15:50:01 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-13 15:50:01 -0500
+
+
+Started GET "/directivas" for 127.0.0.1 at 2014-06-13 15:50:14 -0500
+Processing by DirectivasController#index as HTML
+  [1m[36mDirectiva Load (0.2ms)[0m  [1mSELECT "directivas".* FROM "directivas"[0m
+  Rendered directivas/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/directivas" for 127.0.0.1 at 2014-06-13 15:52:44 -0500
+Processing by DirectivasController#index as HTML
+  [1m[35mDirectiva Load (0.1ms)[0m  SELECT "directivas".* FROM "directivas"
+  Rendered directivas/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-06-13 15:52:44 -0500
+
+
+Started GET "/assets/membrecia.css?body=1" for 127.0.0.1 at 2014-06-13 15:52:44 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-13 15:52:44 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-13 15:52:44 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-13 15:52:44 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-13 15:52:44 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-13 15:52:44 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-13 15:52:44 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-13 15:52:44 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-13 15:52:44 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-13 15:52:44 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-13 15:52:44 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-13 15:52:44 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-13 15:52:44 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-13 15:52:44 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-13 15:52:44 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-13 15:52:44 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-13 15:52:44 -0500
+
+
+Started GET "/assets/membrecia.js?body=1" for 127.0.0.1 at 2014-06-13 15:52:44 -0500
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-13 15:52:44 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-13 15:52:44 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-13 15:52:44 -0500
+
+
+Started GET "/assets/directivas.js?body=1" for 127.0.0.1 at 2014-06-13 15:52:44 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-13 15:52:44 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-13 15:52:44 -0500
+
+
+Started GET "/directivas" for 127.0.0.1 at 2014-06-13 15:53:31 -0500
+Processing by DirectivasController#index as HTML
+  [1m[36mDirectiva Load (0.2ms)[0m  [1mSELECT "directivas".* FROM "directivas"[0m
+  Rendered directivas/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 11ms (Views: 10.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-06-13 15:53:31 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-13 15:53:31 -0500
+
+
+Started GET "/assets/membrecia.css?body=1" for 127.0.0.1 at 2014-06-13 15:53:31 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-13 15:53:31 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-13 15:53:31 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-13 15:53:31 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-13 15:53:31 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-13 15:53:31 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-13 15:53:31 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-13 15:53:31 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-13 15:53:31 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-13 15:53:31 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-13 15:53:31 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-13 15:53:31 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-13 15:53:31 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-13 15:53:31 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-13 15:53:31 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-13 15:53:31 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-13 15:53:31 -0500
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-13 15:53:31 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-13 15:53:31 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-13 15:53:31 -0500
+
+
+Started GET "/assets/directivas.js?body=1" for 127.0.0.1 at 2014-06-13 15:53:31 -0500
+
+
+Started GET "/assets/membrecia.js?body=1" for 127.0.0.1 at 2014-06-13 15:53:31 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-13 15:53:31 -0500
+
+
+Started GET "/directivas/1" for 127.0.0.1 at 2014-06-13 15:53:39 -0500
+Processing by DirectivasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mDirectiva Load (0.1ms)[0m  SELECT  "directivas".* FROM "directivas"  WHERE "directivas"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered directivas/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/directivas" for 127.0.0.1 at 2014-06-13 15:54:42 -0500
+Processing by DirectivasController#index as HTML
+  [1m[36mDirectiva Load (0.1ms)[0m  [1mSELECT "directivas".* FROM "directivas"[0m
+  Rendered directivas/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/directivas/1/edit" for 127.0.0.1 at 2014-06-13 15:54:46 -0500
+Processing by DirectivasController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mDirectiva Load (0.1ms)[0m  SELECT  "directivas".* FROM "directivas"  WHERE "directivas"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered directivas/_form.html.erb (5.1ms)
+  Rendered directivas/edit.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/directivas/1" for 127.0.0.1 at 2014-06-13 15:54:52 -0500
+Processing by DirectivasController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LYgXrjwZGHY6kglKATCFyFiaJLD4UAmx3S9OhyetrTI=", "directiva"=>{"nombre"=>"Juan pablo", "apellido"=>"Montero", "cargo"=>"Pastor"}, "commit"=>"Update Directiva", "id"=>"1"}
+  [1m[36mDirectiva Load (0.1ms)[0m  [1mSELECT  "directivas".* FROM "directivas"  WHERE "directivas"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/directivas/1
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/directivas/1" for 127.0.0.1 at 2014-06-13 15:54:53 -0500
+Processing by DirectivasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mDirectiva Load (0.1ms)[0m  SELECT  "directivas".* FROM "directivas"  WHERE "directivas"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered directivas/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-06-13 15:54:53 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-13 15:54:53 -0500
+
+
+Started GET "/assets/membrecia.css?body=1" for 127.0.0.1 at 2014-06-13 15:54:53 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-13 15:54:53 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-13 15:54:53 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-13 15:54:53 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-13 15:54:53 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-13 15:54:53 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-13 15:54:53 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-13 15:54:53 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-13 15:54:53 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-13 15:54:53 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-13 15:54:53 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-13 15:54:53 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-13 15:54:53 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-13 15:54:53 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-13 15:54:53 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-13 15:54:53 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-13 15:54:53 -0500
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-13 15:54:53 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-13 15:54:53 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-13 15:54:53 -0500
+
+
+Started GET "/assets/directivas.js?body=1" for 127.0.0.1 at 2014-06-13 15:54:53 -0500
+
+
+Started GET "/assets/membrecia.js?body=1" for 127.0.0.1 at 2014-06-13 15:54:53 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-13 15:54:53 -0500
+
+
+Started GET "/directivas" for 127.0.0.1 at 2014-06-13 15:54:56 -0500
+Processing by DirectivasController#index as HTML
+  [1m[36mDirectiva Load (0.1ms)[0m  [1mSELECT "directivas".* FROM "directivas"[0m
+  Rendered directivas/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/dirictiva" for 127.0.0.1 at 2014-06-13 15:55:51 -0500
+
+ActionController::RoutingError (No route matches [GET] "/dirictiva"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/salomon/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/salomon/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/salomon/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/salomon/.rvm/gems/ruby-2.1.1@4.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /home/salomon/.rvm/gems/ruby-2.1.1@4.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /home/salomon/.rvm/gems/ruby-2.1.1@4.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /home/salomon/.rvm/gems/ruby-2.1.1@4.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (19.1ms)
