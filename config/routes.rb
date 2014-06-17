@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
+  #get 'static_pages/biblia' 
+  match '/biblia', to: 'static_pages#biblia',  via: 'get'
   resources :cancions
 
   resources :eventos
-
-  resources :directivas
 
   resources :membrecia
 
@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'directivas#index'
+  root 'cancions#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
