@@ -4,7 +4,9 @@ class MembreciaController < ApplicationController
   # GET /membrecia
   # GET /membrecia.json
   def index
-    @membrecia = Membrecium.all
+    @membrecia = Membrecium.search(params[:search], params[:page])
+
+
   end
 
   # GET /membrecia/1
