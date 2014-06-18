@@ -48,12 +48,12 @@
     </ul>
    </li>
 
-    <li ><%= link_to "Tesoreria", cancions_path %>
+    <li ><%= link_to "Tesoreria" %>
      <ul>
-         <li> <%= link_to "Ofrendas", cancions_path %></li>
-         <li> <%= link_to "Diezmos", cancions_path %></li>
-         <li> <%= link_to "Ingresos", cancions_path %></li>
-         <li> <%= link_to "Egresos", cancions_path %></li>
+         <li> <%= link_to "Ofrendas", controller: "pagina", action: "ofrenda" %></li>
+         <li> <%= link_to "Diezmos", controller: "paginadi", action: "diezmo" %></li>
+         <li> <%= link_to "Ingresos", controller: "paginain", action: "ingresos" %></li>
+         <li> <%= link_to "Egresos", controller: "paginaeg", action: "egresos"%></li>
     </ul>
    </li>
 

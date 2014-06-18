@@ -1,11 +1,14 @@
 <%- model_class = Evento -%>
+ <div id="buscador">
  <%= form_tag eventos_path, :method => 'get' do %>
         <% content_tag :label do %>
         Search term:
         <%= text_field_tag :search, params[:search] %>
+        
         <%= submit_tag "Buscar", :name => nil %>
      <% end %>
 <% end %>
+</div>
 <table class="table table-striped">
   <thead>
     <tr>

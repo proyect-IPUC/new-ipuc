@@ -11,20 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140616194918) do
+ActiveRecord::Schema.define(version: 20140618181325) do
 
   create_table "cancions", force: true do |t|
     t.string   "cancion"
     t.string   "genero"
     t.string   "artista"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "directivas", force: true do |t|
-    t.string   "nombre"
-    t.string   "apellido"
-    t.string   "cargo"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -48,6 +40,30 @@ ActiveRecord::Schema.define(version: 20140616194918) do
     t.boolean  "recibioEspiritu"
     t.date     "fecha"
     t.text     "comentarios"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "paginadis", force: true do |t|
+    t.string   "diezmo"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "paginaegs", force: true do |t|
+    t.string   "egresos"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "paginains", force: true do |t|
+    t.string   "ingresos"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "paginas", force: true do |t|
+    t.string   "ofrenda"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

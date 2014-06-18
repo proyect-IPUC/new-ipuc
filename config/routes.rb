@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
+  get 'paginaeg/egresos'
+
+  get 'paginain/ingresos'
+
+  get 'paginadi/diezmo'
+
+  get 'pagina/ofrenda'
+
+  get 'static_pages/ofrenda'
+
   #get 'static_pages/biblia' 
   match '/biblia', to: 'static_pages#biblia',  via: 'get'
   resources :cancions
