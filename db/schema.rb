@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140618183948) do
+ActiveRecord::Schema.define(version: 20140618213108) do
 
   create_table "alabanzas", force: true do |t|
     t.datetime "created_at"
@@ -92,6 +92,16 @@ ActiveRecord::Schema.define(version: 20140618183948) do
     t.datetime "updated_at"
   end
 
+  create_table "miembrs", force: true do |t|
+    t.string   "nombre"
+    t.string   "apellido"
+    t.string   "cargo"
+    t.string   "celular"
+    t.string   "TelFijo"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "misiones", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -118,8 +128,28 @@ ActiveRecord::Schema.define(version: 20140618183948) do
     t.datetime "updated_at"
   end
 
+  create_table "p_trabajos", force: true do |t|
+    t.string   "NombrePlanTrabajo"
+    t.string   "fechaPlanTrabajo"
+    t.text     "DescripcionPlan"
+    t.boolean  "Aprobada?"
+    t.text     "Observacion"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "paginas", force: true do |t|
     t.string   "junta_local"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "plan_trabajos", force: true do |t|
+    t.string   "NombrePlanTrabajo"
+    t.string   "fechaPlanTrabajo"
+    t.text     "DescripcionPlan"
+    t.boolean  "Aprobada?"
+    t.text     "Observacion"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

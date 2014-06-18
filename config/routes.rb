@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :p_trabajos
+
+  resources :miembrs
+
   get 'modulos/junta'
 
   get 'modulos/jovenes'
