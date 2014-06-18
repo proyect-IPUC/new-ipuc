@@ -12,7 +12,7 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer',  platforms: :ruby
+ gem 'therubyracer',  platforms: :ruby
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -37,4 +37,27 @@ gem 'spring',        group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6d669f0512286118d4648b6ff26dfd95e75d7d01
+gem 'will_paginate'
+gem 'less-rails'
+gem 'twitter-bootstrap-rails'
+gem 'simple_form'
+
+gem 'bootstrap-sass'
+
+group :development do
+gem 'better_errors'
+gem 'binding_of_caller', :platforms=>[:mri_19, :mri_20, :rbx]
+gem 'quiet_assets'
+gem 'rails_layout'
+end
+<<<<<<< HEAD
+
+gem 'lazybox'
+=======
+gem 'lazybox'
+
+>>>>>>> 6d669f0512286118d4648b6ff26dfd95e75d7d01
