@@ -37,10 +37,7 @@ gem 'spring',        group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-<<<<<<< HEAD
 
-=======
->>>>>>> 6d669f0512286118d4648b6ff26dfd95e75d7d01
 gem 'will_paginate'
 gem 'less-rails'
 gem 'twitter-bootstrap-rails'
@@ -54,10 +51,8 @@ gem 'binding_of_caller', :platforms=>[:mri_19, :mri_20, :rbx]
 gem 'quiet_assets'
 gem 'rails_layout'
 end
-<<<<<<< HEAD
+
 
 gem 'lazybox'
-=======
-gem 'lazybox'
 
->>>>>>> 6d669f0512286118d4648b6ff26dfd95e75d7d01
+

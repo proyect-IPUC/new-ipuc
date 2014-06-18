@@ -1,7 +1,19 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
   resources :p_trabajos
 
   resources :miembrs
+=======
+  get 'paginaeg/egresos'
+
+  get 'paginain/ingresos'
+
+  get 'paginadi/diezmo'
+
+  get 'pagina/ofrenda'
+
+  get 'static_pages/ofrenda'
+>>>>>>> 82a53d4dae851094635c6c0f35e19c52e5e3319f
 
   get 'modulos/junta'
 

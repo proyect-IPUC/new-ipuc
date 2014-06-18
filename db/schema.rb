@@ -13,31 +13,10 @@
 
 ActiveRecord::Schema.define(version: 20140618213108) do
 
-  create_table "alabanzas", force: true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "aseos", force: true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "audivisuales", force: true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "cancions", force: true do |t|
     t.string   "cancion"
     t.string   "genero"
     t.string   "artista"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "damas", force: true do |t|
-    t.string   "Dorcas"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -49,32 +28,12 @@ ActiveRecord::Schema.define(version: 20140618213108) do
     t.datetime "updated_at"
   end
 
-  create_table "esc_doms", force: true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "evangelismos", force: true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "eventos", force: true do |t|
     t.string   "evento"
     t.text     "descripcion"
     t.date     "fecha"
     t.time     "hora_inicio"
     t.time     "hora_final"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "intercepcions", force: true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "jovenes", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -92,6 +51,7 @@ ActiveRecord::Schema.define(version: 20140618213108) do
     t.datetime "updated_at"
   end
 
+<<<<<<< HEAD
   create_table "miembrs", force: true do |t|
     t.string   "nombre"
     t.string   "apellido"
@@ -107,6 +67,8 @@ ActiveRecord::Schema.define(version: 20140618213108) do
     t.datetime "updated_at"
   end
 
+=======
+>>>>>>> 82a53d4dae851094635c6c0f35e19c52e5e3319f
   create_table "modulos", force: true do |t|
     t.string   "junta"
     t.string   "jovenes"
@@ -128,6 +90,7 @@ ActiveRecord::Schema.define(version: 20140618213108) do
     t.datetime "updated_at"
   end
 
+<<<<<<< HEAD
   create_table "p_trabajos", force: true do |t|
     t.string   "NombrePlanTrabajo"
     t.string   "fechaPlanTrabajo"
@@ -140,10 +103,15 @@ ActiveRecord::Schema.define(version: 20140618213108) do
 
   create_table "paginas", force: true do |t|
     t.string   "junta_local"
+=======
+  create_table "paginadis", force: true do |t|
+    t.string   "diezmo"
+>>>>>>> 82a53d4dae851094635c6c0f35e19c52e5e3319f
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
+<<<<<<< HEAD
   create_table "plan_trabajos", force: true do |t|
     t.string   "NombrePlanTrabajo"
     t.string   "fechaPlanTrabajo"
@@ -155,34 +123,22 @@ ActiveRecord::Schema.define(version: 20140618213108) do
   end
 
   create_table "protemplos", force: true do |t|
+=======
+  create_table "paginaegs", force: true do |t|
+    t.string   "egresos"
+>>>>>>> 82a53d4dae851094635c6c0f35e19c52e5e3319f
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "pruebas", force: true do |t|
-    t.string   "junta"
-    t.string   "otra"
-    t.string   "otramas"
+  create_table "paginains", force: true do |t|
+    t.string   "ingresos"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "publicidads", force: true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "recepcions", force: true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "renuevos", force: true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "vigilancia", force: true do |t|
+  create_table "paginas", force: true do |t|
+    t.string   "ofrenda"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
