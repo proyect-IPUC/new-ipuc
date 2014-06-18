@@ -1,4 +1,40 @@
 Rails.application.routes.draw do
+  get 'modulos/junta'
+
+  get 'modulos/jovenes'
+
+  get 'modulos/damas'
+
+  get 'modulos/esc_dom'
+
+  get 'modulos/vigilancia'
+
+  get 'modulos/aseo'
+
+  get 'modulos/intercepcion'
+
+  get 'modulos/recepcion'
+
+  get 'modulos/misiones'
+
+  get 'modulos/cafeteria'
+
+  get 'modulos/alabanza'
+
+  get 'modulos/renuevos'
+
+  get 'modulos/evangelismo'
+
+  get 'modulos/publicidad'
+
+  get 'modulos/audiovisuales'
+
+  get 'modulos/protemplo'
+
+  get 'damas/Dorcas'
+
+  resources :directivas
+
   #get 'static_pages/biblia' 
   match '/biblia', to: 'static_pages#biblia',  via: 'get'
   resources :cancions

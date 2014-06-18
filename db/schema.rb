@@ -11,7 +11,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140616194918) do
+ActiveRecord::Schema.define(version: 20140618183948) do
+
+  create_table "alabanzas", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "aseos", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "audivisuales", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "cancions", force: true do |t|
     t.string   "cancion"
@@ -21,10 +36,25 @@ ActiveRecord::Schema.define(version: 20140616194918) do
     t.datetime "updated_at"
   end
 
+  create_table "damas", force: true do |t|
+    t.string   "Dorcas"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "directivas", force: true do |t|
     t.string   "nombre"
-    t.string   "apellido"
-    t.string   "cargo"
+    t.text     "descripcion"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "esc_doms", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "evangelismos", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -39,6 +69,16 @@ ActiveRecord::Schema.define(version: 20140616194918) do
     t.datetime "updated_at"
   end
 
+  create_table "intercepcions", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "jovenes", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "membrecia", force: true do |t|
     t.string   "nombre"
     t.string   "apellidos"
@@ -48,6 +88,71 @@ ActiveRecord::Schema.define(version: 20140616194918) do
     t.boolean  "recibioEspiritu"
     t.date     "fecha"
     t.text     "comentarios"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "misiones", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "modulos", force: true do |t|
+    t.string   "junta"
+    t.string   "jovenes"
+    t.string   "damas"
+    t.string   "esc_dom"
+    t.string   "vigilancia"
+    t.string   "aseo"
+    t.string   "intercepcion"
+    t.string   "recepcion"
+    t.string   "misiones"
+    t.string   "cafeteria"
+    t.string   "alabanza"
+    t.string   "renuevos"
+    t.string   "evangelismo"
+    t.string   "publicidad"
+    t.string   "audiovisuales"
+    t.string   "protemplo"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "paginas", force: true do |t|
+    t.string   "junta_local"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "protemplos", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "pruebas", force: true do |t|
+    t.string   "junta"
+    t.string   "otra"
+    t.string   "otramas"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "publicidads", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "recepcions", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "renuevos", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "vigilancia", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
   end
