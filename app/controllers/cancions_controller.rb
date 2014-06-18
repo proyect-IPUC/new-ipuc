@@ -4,7 +4,8 @@ class CancionsController < ApplicationController
   # GET /cancions
   # GET /cancions.json
   def index
-    @cancions = Cancion.all
+    @cancions = Cancion.search(params[:search], params[:page])
+
   end
 
   # GET /cancions/1

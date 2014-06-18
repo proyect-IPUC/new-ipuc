@@ -1,7 +1,11 @@
 <%- model_class = Evento -%>
-<div class="page-header">
-  <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
-</div>
+ <%= form_tag eventos_path, :method => 'get' do %>
+        <% content_tag :label do %>
+        Search term:
+        <%= text_field_tag :search, params[:search] %>
+        <%= submit_tag "Buscar", :name => nil %>
+     <% end %>
+<% end %>
 <table class="table table-striped">
   <thead>
     <tr>
@@ -44,3 +48,6 @@
 <%= link_to t('.new', :default => t("helpers.links.new")),
             new_evento_path,
             :class => 'btn btn-primary' %>
+<%= will_paginate @eventos, :previous_label => '&laquo; Anterior', :next_label => 'Siguiente &raquo;' %>
+<br>
+Eventos: <%= @eventos.count %>
