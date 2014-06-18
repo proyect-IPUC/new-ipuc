@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-<<<<<<< HEAD
   get 'paginaeg/egresos'
 
   get 'paginain/ingresos'
@@ -9,7 +8,7 @@ Rails.application.routes.draw do
   get 'pagina/ofrenda'
 
   get 'static_pages/ofrenda'
-=======
+
   get 'modulos/junta'
 
   get 'modulos/jovenes'
@@ -45,7 +44,6 @@ Rails.application.routes.draw do
   get 'damas/Dorcas'
 
   resources :directivas
->>>>>>> 69fe8e2eacf3d9861a03719a3005ef9f3fd9d8e1
 
   #get 'static_pages/biblia' 
   match '/biblia', to: 'static_pages#biblia',  via: 'get'
