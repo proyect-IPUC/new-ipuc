@@ -16,11 +16,12 @@
 //= require bootstrap
 //= require lazybox
 //= require_tree .
+//= require jquery-ui
+//= require autocomplete-rails
 
-<<<<<<< HEAD
+
 $(document).on('ready page:load', function () {
      $.lazybox.settings={ cancelClass: "pure-button", submitClass: 'pure-button pure-button-primary' }
      $.rails.allowAction = $.lazybox.confirm;
 });
-=======
->>>>>>> 6d669f0512286118d4648b6ff26dfd95e75d7d01
+

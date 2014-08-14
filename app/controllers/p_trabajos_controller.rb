@@ -28,7 +28,7 @@ class PTrabajosController < ApplicationController
 
     respond_to do |format|
       if @p_trabajo.save
-        format.html { redirect_to @p_trabajo, notice: 'P trabajo was successfully created.' }
+        format.html { redirect_to @p_trabajo, notice: 'Plan De Trabajo Creado Exitosamente.' }
         format.json { render :show, status: :created, location: @p_trabajo }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class PTrabajosController < ApplicationController
   def update
     respond_to do |format|
       if @p_trabajo.update(p_trabajo_params)
-        format.html { redirect_to @p_trabajo, notice: 'P trabajo was successfully updated.' }
+        format.html { redirect_to @p_trabajo, notice: 'Plan De Trabajo Modificado Exitosamente.' }
         format.json { render :show, status: :ok, location: @p_trabajo }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class PTrabajosController < ApplicationController
   def destroy
     @p_trabajo.destroy
     respond_to do |format|
-      format.html { redirect_to p_trabajos_url, notice: 'P trabajo was successfully destroyed.' }
+      format.html { redirect_to p_trabajos_url, notice: 'Plan De Trabajo Eliminado Exitosamente.' }
       format.json { head :no_content }
     end
   end

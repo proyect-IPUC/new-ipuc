@@ -28,7 +28,7 @@ class DirectivasController < ApplicationController
 
     respond_to do |format|
       if @directiva.save
-        format.html { redirect_to @directiva, notice: 'Directiva was successfully created.' }
+        format.html { redirect_to @directiva, notice: 'Directiva Creada Exitosamente.' }
         format.json { render :show, status: :created, location: @directiva }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class DirectivasController < ApplicationController
   def update
     respond_to do |format|
       if @directiva.update(directiva_params)
-        format.html { redirect_to @directiva, notice: 'Directiva was successfully updated.' }
+        format.html { redirect_to @directiva, notice: 'Directiva Modificada Exitosamente.' }
         format.json { render :show, status: :ok, location: @directiva }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class DirectivasController < ApplicationController
   def destroy
     @directiva.destroy
     respond_to do |format|
-      format.html { redirect_to directivas_url, notice: 'Directiva was successfully destroyed.' }
+      format.html { redirect_to directivas_url, notice: 'Directiva Eliminada Exitosamente.' }
       format.json { head :no_content }
     end
   end

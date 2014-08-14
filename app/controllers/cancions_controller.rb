@@ -29,7 +29,7 @@ class CancionsController < ApplicationController
 
     respond_to do |format|
       if @cancion.save
-        format.html { redirect_to @cancion, notice: 'Cancion was successfully created.' }
+        format.html { redirect_to @cancion, notice: 'Cancion Creada Exitosamente.' }
         format.json { render :show, status: :created, location: @cancion }
       else
         format.html { render :new }
@@ -43,7 +43,7 @@ class CancionsController < ApplicationController
   def update
     respond_to do |format|
       if @cancion.update(cancion_params)
-        format.html { redirect_to @cancion, notice: 'Cancion was successfully updated.' }
+        format.html { redirect_to @cancion, notice: 'Cancion Modificada Exitosamente.' }
         format.json { render :show, status: :ok, location: @cancion }
       else
         format.html { render :edit }
@@ -57,7 +57,7 @@ class CancionsController < ApplicationController
   def destroy
     @cancion.destroy
     respond_to do |format|
-      format.html { redirect_to cancions_url, notice: 'Cancion was successfully destroyed.' }
+      format.html { redirect_to cancions_url, notice: 'Cancion Eliminada Exitosamente.' }
       format.json { head :no_content }
     end
   end

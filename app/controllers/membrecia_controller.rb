@@ -30,7 +30,7 @@ class MembreciaController < ApplicationController
 
     respond_to do |format|
       if @membrecium.save
-        format.html { redirect_to @membrecium, notice: 'Membrecium was successfully created.' }
+        format.html { redirect_to @membrecium, notice: 'Membrecia Creada Exitosamente.' }
         format.json { render :show, status: :created, location: @membrecium }
       else
         format.html { render :new }
@@ -44,7 +44,7 @@ class MembreciaController < ApplicationController
   def update
     respond_to do |format|
       if @membrecium.update(membrecium_params)
-        format.html { redirect_to @membrecium, notice: 'Membrecium was successfully updated.' }
+        format.html { redirect_to @membrecium, notice: 'Membrecia Modificada Exitosamente.' }
         format.json { render :show, status: :ok, location: @membrecium }
       else
         format.html { render :edit }
@@ -58,7 +58,7 @@ class MembreciaController < ApplicationController
   def destroy
     @membrecium.destroy
     respond_to do |format|
-      format.html { redirect_to membrecia_url, notice: 'Membrecium was successfully destroyed.' }
+      format.html { redirect_to membrecia_url, notice: 'Membrecia Eliminada Exitosamente.' }
       format.json { head :no_content }
     end
   end
