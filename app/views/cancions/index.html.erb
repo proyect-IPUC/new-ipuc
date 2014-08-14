@@ -1,5 +1,13 @@
+<<<<<<< HEAD
 <br>
+=======
+
+>>>>>>> d92bd0cefe0b873add4a57e585945134649e9809
 <%- model_class = Cancion -%>
+<div class="todo">
+
+
+<div id="cont">
         <%= form_tag cancions_path, :method => 'get' do %>
         <% content_tag :label do %>
         Search term:
@@ -7,6 +15,7 @@
         <%= submit_tag "Buscar", :name => nil %>
      <% end %>
 <% end %>
+</div>
 <table class="table table-striped">
   <thead>
     <tr>
@@ -48,3 +57,4 @@
 <%= will_paginate @cancions, :previous_label => '&laquo; Anterior', :next_label => 'Siguiente &raquo;' %>
 <br>
 Cancions: <%= @cancions.count %>
+</div>

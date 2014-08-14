@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+<<<<<<< HEAD
   
   
 
@@ -7,6 +8,12 @@ Rails.application.routes.draw do
 
   resources :p_trabajos
 
+=======
+  resources :p_trabajos
+
+  resources :miembrs
+
+>>>>>>> d92bd0cefe0b873add4a57e585945134649e9809
   get 'paginaeg/egresos'
 
   get 'paginain/ingresos'

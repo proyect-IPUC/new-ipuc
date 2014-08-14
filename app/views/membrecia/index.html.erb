@@ -1,5 +1,8 @@
 <br>
 <%- model_class = Membrecium -%>
+
+<div id="cont">
+
 <%= form_tag membrecia_path, :method => 'get' do %>
 <% content_tag :label do %>
 Search term:
@@ -7,6 +10,7 @@ Search term:
 <%= submit_tag "Buscar", :name => nil %>
 <% end %>
 <% end %>
+</div>
 <table class="table table-striped">
   <thead>
     <tr>
