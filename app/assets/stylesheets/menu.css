@@ -1,0 +1,275 @@
+#buscador{
+ margin-left: 550px;
+ margin-top: 20px;
+}
+
+#img{
+
+bottom: -600px;
+right: -350px;
+
+}
+
+#text{
+bottom: -620px;
+right: 230px;
+
+}
+
+
+#cssmenu ul {
+  margin-left:10px;
+  padding: 7px 6px 0;
+  background: #000000 url(images/overlay.png) repeat-x 0 -110px;
+  line-height: 100%;
+  border-radius: 1em;
+  font: normal 0.5333333333333333em Arial, Helvetica, sans-serif;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  width: auto;
+}
+#cssmenu li {
+  margin: 0 5px;
+  padding: 0 0 8px;
+  float: left;
+  position: relative;
+  list-style: none;
+}
+#cssmenu a,
+#cssmenu a:link {
+  font-weight: bold;
+  font-size: 13px;
+  color: #e7e5e5;
+  text-decoration: none;
+  display: block;
+  padding: 8px 20px;
+  margin: 0;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+#cssmenu a:hover {
+  background: #000;
+  color: #fff;
+}
+#cssmenu .active a,
+#cssmenu li:hover > a {
+  background: #1a1a1a url(images/overlay.png) repeat-x 0 -40px;
+  background: #666666 url(images/overlay.png) repeat-x 0 -40px;
+  color: #444;
+  border-top: solid 1px  #f8f8f8;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 1px 0 #ffffff;
+}
+#cssmenu ul ul li:hover a,
+#cssmenu li:hover li a {
+  background: none;
+  border: none;
+  color: #666;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
+#cssmenu ul ul a:hover {
+  background: #000000 url(images/overlay.png) repeat-x 0 -100px !important;
+  color: #fff !important;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+#cssmenu li:hover > ul {
+  display: block;
+}
+#cssmenu ul ul {
+  z-index: 1000;
+  display: none;
+  margin: 0;
+  padding: 0;
+  width: 185px;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background: #ffffff url(images/overlay.png) repeat-x 0 0;
+  border: solid 1px #b4b4b4;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+#cssmenu ul ul li {
+  float: none;
+  margin: 0;
+  padding: 3px;
+}
+#cssmenu ul ul a,
+#cssmenu ul ul a:link {
+  font-weight: normal;
+  font-size: 12px;
+}
+#cssmenu ul:after {
+  content: '.';
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+* html #cssmenu ul {
+  height: 1%;
+
+}
+
+
+
+
+/* css de los modulos */
+
+
+
+#img{
+
+position: absolute;
+bottom: -600px;
+right: -350px;
+
+}
+
+#text{
+
+position: absolute;
+bottom: -620px;
+right: 230px;
+
+}
+
+
+#menu ul {
+  margin-right:280px;
+  margin-left:280px;
+  margin-top:35px;
+  padding: 10px 8px 1px 175px;
+  background: #6495ED url(images/overlay.png) repeat-x 0 -110px;
+  line-height: 100%;
+  border-radius: 1em;
+  font: normal 0.5333333333333333em Arial, Helvetica, sans-serif;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  width: auto;
+}
+#menu li {
+  margin: 0 5px;
+  padding: 0 0 8px;
+  float: left;
+  position: relative;
+  list-style: none;
+}
+#menu a,
+#menu a:link {
+  font-weight: bold;
+  font-size: 13px;
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 8px 20px;
+  margin: 0;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+#menu a:hover {
+  background: #000;
+  color: #fff;
+}
+#menu .active a,
+#menu li:hover > a {
+  background: silver url(images/overlay.png) repeat-x 0 -40px;
+  background: silver url(images/overlay.png) repeat-x 0 -40px;
+  color: #444;
+  border-top: solid 1px  #f8f8f8;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 1px 0 #ffffff;
+}
+#menu ul ul li:hover a,
+#menu li:hover li a {
+  background: none;
+  border: none;
+  color: #666;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
+#menu ul ul a:hover {
+  background: #000000 url(images/overlay.png) repeat-x 0 -100px !important;
+  color: #fff !important;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+#menu li:hover > ul {
+  display: block;
+}
+#menu ul ul {
+  z-index: 1000;
+  display: none;
+  margin: 0;
+  padding: 0;
+  width: 185px;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background: #ffffff url(images/overlay.png) repeat-x 0 0;
+  border: solid 1px #b4b4b4;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+#menu ul ul li {
+  float: none;
+  margin: 0;
+  padding: 3px;
+}
+#menu ul ul a,
+#menu ul ul a:link {
+  font-weight: normal;
+  font-size: 12px;
+}
+#menu ul:after {
+  content: '.';
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+* html #menu ul {
+  height: 1%;
+
+  
+}
+#cont{
+    margin-top: 50px;
+}
+
+.todo{
+  margin-left: 33px;
+  margin-right:33px;
+ 
+
+}
