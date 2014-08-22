@@ -1,13 +1,13 @@
-<<<<<<< HEAD
+
 
 <%- model_class = Cancion -%>
 <div class="todo">
 
 
 <div id="cont">
-=======
+
 <%- model_class = Cancion -%>
->>>>>>> f0553bd5aae2c47e861bb097048fd36c0e7321a4
+
         <%= form_tag cancions_path, :method => 'get' do %>
         <% content_tag :label do %>
         Search term:
@@ -15,10 +15,9 @@
         <%= submit_tag "Buscar", :name => nil %>
      <% end %>
 <% end %>
-<<<<<<< HEAD
+
 </div>
-=======
->>>>>>> f0553bd5aae2c47e861bb097048fd36c0e7321a4
+
 <table class="table table-striped">
   <thead>
     <tr>
@@ -59,9 +58,9 @@
             :class => 'btn btn-primary' %>
 <%= will_paginate @cancions, :previous_label => '&laquo; Anterior', :next_label => 'Siguiente &raquo;' %>
 <br>
-<<<<<<< HEAD
+
 Cancions: <%= @cancions.count %>
 </div>
-=======
+
 Cancions: <%= @cancions.count %>
->>>>>>> f0553bd5aae2c47e861bb097048fd36c0e7321a4
+

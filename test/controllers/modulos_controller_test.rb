@@ -1,84 +1,49 @@
 require 'test_helper'
 
 class ModulosControllerTest < ActionController::TestCase
-  test "should get junta" do
-    get :junta
+  setup do
+    @modulo = modulos(:one)
+  end
+
+  test "should get index" do
+    get :index
+    assert_response :success
+    assert_not_nil assigns(:modulos)
+  end
+
+  test "should get new" do
+    get :new
     assert_response :success
   end
 
-  test "should get jovenes" do
-    get :jovenes
+  test "should create modulo" do
+    assert_difference('Modulo.count') do
+      post :create, modulo: { directivas_id: @modulo.directivas_id, eventos: @modulo.eventos, miembros: @modulo.miembros, plan_trabajo: @modulo.plan_trabajo }
+    end
+
+    assert_redirected_to modulo_path(assigns(:modulo))
+  end
+
+  test "should show modulo" do
+    get :show, id: @modulo
     assert_response :success
   end
 
-  test "should get damas" do
-    get :damas
+  test "should get edit" do
+    get :edit, id: @modulo
     assert_response :success
   end
 
-  test "should get esc_dom" do
-    get :esc_dom
-    assert_response :success
+  test "should update modulo" do
+    patch :update, id: @modulo, modulo: { directivas_id: @modulo.directivas_id, eventos: @modulo.eventos, miembros: @modulo.miembros, plan_trabajo: @modulo.plan_trabajo }
+    assert_redirected_to modulo_path(assigns(:modulo))
   end
 
-  test "should get vigilancia" do
-    get :vigilancia
-    assert_response :success
-  end
+  test "should destroy modulo" do
+    assert_difference('Modulo.count', -1) do
+      delete :destroy, id: @modulo
+    end
 
-  test "should get aseo" do
-    get :aseo
-    assert_response :success
+    assert_redirected_to modulos_path
   end
-
-  test "should get intercepcion" do
-    get :intercepcion
-    assert_response :success
-  end
-
-  test "should get recepcion" do
-    get :recepcion
-    assert_response :success
-  end
-
-  test "should get misiones" do
-    get :misiones
-    assert_response :success
-  end
-
-  test "should get cafeteria" do
-    get :cafeteria
-    assert_response :success
-  end
-
-  test "should get alabanza" do
-    get :alabanza
-    assert_response :success
-  end
-
-  test "should get renuevos" do
-    get :renuevos
-    assert_response :success
-  end
-
-  test "should get evangelismo" do
-    get :evangelismo
-    assert_response :success
-  end
-
-  test "should get publicidad" do
-    get :publicidad
-    assert_response :success
-  end
-
-  test "should get audiovisuales" do
-    get :audiovisuales
-    assert_response :success
-  end
-
-  test "should get protemplo" do
-    get :protemplo
-    assert_response :success
-  end
-
 end

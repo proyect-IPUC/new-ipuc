@@ -1,37 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  junta: MyString
-  jovenes: MyString
-  damas: MyString
-  esc_dom: MyString
-  vigilancia: MyString
-  aseo: MyString
-  intercepcion: MyString
-  recepcion: MyString
-  misiones: MyString
-  cafeteria: MyString
-  alabanza: MyString
-  renuevos: MyString
-  evangelismo: MyString
-  publicidad: MyString
-  audiovisuales: MyString
-  protemplo: MyString
+  miembros: MyString
+  eventos: MyString
+  plan_trabajo: MyString
+  directivas_id: 
 
 two:
-  junta: MyString
-  jovenes: MyString
-  damas: MyString
-  esc_dom: MyString
-  vigilancia: MyString
-  aseo: MyString
-  intercepcion: MyString
-  recepcion: MyString
-  misiones: MyString
-  cafeteria: MyString
-  alabanza: MyString
-  renuevos: MyString
-  evangelismo: MyString
-  publicidad: MyString
-  audiovisuales: MyString
-  protemplo: MyString
+  miembros: MyString
+  eventos: MyString
+  plan_trabajo: MyString
+  directivas_id: 

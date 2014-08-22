@@ -5,6 +5,7 @@
 <table class="table table-striped">
   <thead>
     <tr>
+    <th><%= model_class.human_attribute_name(:title) %></th>
       <th><%= model_class.human_attribute_name(:id) %></th>
       <th><%= model_class.human_attribute_name(:nombre) %></th>
       <th><%= model_class.human_attribute_name(:descripcion) %></th>
@@ -12,11 +13,17 @@
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
   </thead>
+
   <tbody>
+  
+         <br>
+         <br>
     <% @directivas.each do |directiva| %>
+
       <tr>
+         <td><%=link_to 'Examinar('+ directiva.modulos.count.to_s + ')',directiva_modulos_path(directiva) %></td>
         <td><%= link_to directiva.id, directiva_path(directiva) %></td>
-        <td><%= directiva.nombre %></td>
+        <td><%=link_to directiva.nombre %></td>
         <td><%= directiva.descripcion %></td>
         <td><%=l directiva.created_at %></td>
         <td>

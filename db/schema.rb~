@@ -11,12 +11,33 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140618213108) do
+ActiveRecord::Schema.define(version: 20140814205219) do
+
+  create_table "alabanzas", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "aseos", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "audivisuales", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "cancions", force: true do |t|
     t.string   "cancion"
     t.string   "genero"
     t.string   "artista"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "damas", force: true do |t|
+    t.string   "Dorcas"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -28,12 +49,38 @@ ActiveRecord::Schema.define(version: 20140618213108) do
     t.datetime "updated_at"
   end
 
+  create_table "directs", force: true do |t|
+    t.string   "index"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "esc_doms", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "evangelismos", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "eventos", force: true do |t|
     t.string   "evento"
     t.text     "descripcion"
     t.date     "fecha"
     t.time     "hora_inicio"
     t.time     "hora_final"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "intercepcions", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "jovenes", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -51,7 +98,6 @@ ActiveRecord::Schema.define(version: 20140618213108) do
     t.datetime "updated_at"
   end
 
-
   create_table "miembrs", force: true do |t|
     t.string   "nombre"
     t.string   "apellido"
@@ -66,7 +112,6 @@ ActiveRecord::Schema.define(version: 20140618213108) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
-
 
   create_table "modulos", force: true do |t|
     t.string   "junta"
@@ -89,7 +134,6 @@ ActiveRecord::Schema.define(version: 20140618213108) do
     t.datetime "updated_at"
   end
 
-
   create_table "p_trabajos", force: true do |t|
     t.string   "NombrePlanTrabajo"
     t.string   "fechaPlanTrabajo"
@@ -100,12 +144,26 @@ ActiveRecord::Schema.define(version: 20140618213108) do
     t.datetime "updated_at"
   end
 
-  create_table "paginas", force: true do |t|
-    t.string   "junta_local"
-
   create_table "paginadis", force: true do |t|
     t.string   "diezmo"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
+  create_table "paginaegs", force: true do |t|
+    t.string   "egresos"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "paginains", force: true do |t|
+    t.string   "ingresos"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "paginas", force: true do |t|
+    t.string   "ofrenda"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -121,22 +179,44 @@ ActiveRecord::Schema.define(version: 20140618213108) do
   end
 
   create_table "protemplos", force: true do |t|
-
-  create_table "paginaegs", force: true do |t|
-    t.string   "egresos"
-
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "paginains", force: true do |t|
-    t.string   "ingresos"
+  create_table "pruebas", force: true do |t|
+    t.string   "junta"
+    t.string   "otra"
+    t.string   "otramas"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "paginas", force: true do |t|
-    t.string   "ofrenda"
+  create_table "publicidads", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "recepcions", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "renuevos", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "users", force: true do |t|
+    t.string   "email",            null: false
+    t.string   "crypted_password", null: false
+    t.string   "salt",             null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "users", ["email"], name: "index_users_on_email", unique: true
+
+  create_table "vigilancia", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
   end

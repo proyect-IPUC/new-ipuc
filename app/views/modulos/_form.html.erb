@@ -1,0 +1,10 @@
+<%= simple_form_for [@directiva,@modulo], :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :miembros %>
+  <%= f.input :eventos %>
+  <%= f.input :plan_trabajo %>
+  <div class="form-actions">
+    <%= f.button :submit, :class => 'btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                directiva_modulos_path(@directiva), :class => 'btn' %>
+  </div>
+<% end %>

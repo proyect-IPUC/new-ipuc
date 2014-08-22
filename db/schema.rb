@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140814205219) do
+ActiveRecord::Schema.define(version: 20140820154926) do
 
   create_table "alabanzas", force: true do |t|
     t.datetime "created_at"
@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(version: 20140814205219) do
     t.datetime "updated_at"
   end
 
-  create_table "audivisuales", force: true do |t|
+  create_table "audiovisuales", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -36,8 +36,7 @@ ActiveRecord::Schema.define(version: 20140814205219) do
     t.datetime "updated_at"
   end
 
-  create_table "damas", force: true do |t|
-    t.string   "Dorcas"
+  create_table "damas_dcs", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -45,12 +44,6 @@ ActiveRecord::Schema.define(version: 20140814205219) do
   create_table "directivas", force: true do |t|
     t.string   "nombre"
     t.text     "descripcion"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "directs", force: true do |t|
-    t.string   "index"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -85,6 +78,11 @@ ActiveRecord::Schema.define(version: 20140814205219) do
     t.datetime "updated_at"
   end
 
+  create_table "junta", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "membrecia", force: true do |t|
     t.string   "nombre"
     t.string   "apellidos"
@@ -98,51 +96,21 @@ ActiveRecord::Schema.define(version: 20140814205219) do
     t.datetime "updated_at"
   end
 
-  create_table "miembrs", force: true do |t|
-    t.string   "nombre"
-    t.string   "apellido"
-    t.string   "cargo"
-    t.string   "celular"
-    t.string   "TelFijo"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "misiones", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "modulos", force: true do |t|
-    t.string   "junta"
-    t.string   "jovenes"
-    t.string   "damas"
-    t.string   "esc_dom"
-    t.string   "vigilancia"
-    t.string   "aseo"
-    t.string   "intercepcion"
-    t.string   "recepcion"
-    t.string   "misiones"
-    t.string   "cafeteria"
-    t.string   "alabanza"
-    t.string   "renuevos"
-    t.string   "evangelismo"
-    t.string   "publicidad"
-    t.string   "audiovisuales"
-    t.string   "protemplo"
+    t.string   "miembros"
+    t.string   "eventos"
+    t.string   "plan_trabajo"
+    t.integer  "directivas_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "p_trabajos", force: true do |t|
-    t.string   "NombrePlanTrabajo"
-    t.string   "fechaPlanTrabajo"
-    t.text     "DescripcionPlan"
-    t.boolean  "Aprobada?"
-    t.text     "Observacion"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
+  add_index "modulos", ["directivas_id"], name: "index_modulos_on_directivas_id"
 
   create_table "paginadis", force: true do |t|
     t.string   "diezmo"
@@ -168,25 +136,7 @@ ActiveRecord::Schema.define(version: 20140814205219) do
     t.datetime "updated_at"
   end
 
-  create_table "plan_trabajos", force: true do |t|
-    t.string   "NombrePlanTrabajo"
-    t.string   "fechaPlanTrabajo"
-    t.text     "DescripcionPlan"
-    t.boolean  "Aprobada?"
-    t.text     "Observacion"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "protemplos", force: true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "pruebas", force: true do |t|
-    t.string   "junta"
-    t.string   "otra"
-    t.string   "otramas"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -205,16 +155,6 @@ ActiveRecord::Schema.define(version: 20140814205219) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
-
-  create_table "users", force: true do |t|
-    t.string   "email",            null: false
-    t.string   "crypted_password", null: false
-    t.string   "salt",             null: false
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "users", ["email"], name: "index_users_on_email", unique: true
 
   create_table "vigilancia", force: true do |t|
     t.datetime "created_at"

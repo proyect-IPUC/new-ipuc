@@ -1,19 +1,17 @@
 Rails.application.routes.draw do
 
-<<<<<<< HEAD
-  
-  
-
-  get 'direct/index'
+  resources :directivas do
+       resources :modulos
+  end
 
   resources :p_trabajos
 
-=======
+
   resources :p_trabajos
 
   resources :miembrs
 
->>>>>>> d92bd0cefe0b873add4a57e585945134649e9809
+
   get 'paginaeg/egresos'
 
   get 'paginain/ingresos'
@@ -24,39 +22,7 @@ Rails.application.routes.draw do
 
   get 'static_pages/ofrenda'
 
-  get 'modulos/junta'
-
-  get 'modulos/jovenes'
-
-  get 'modulos/damas'
-
-  get 'modulos/esc_dom'
-
-  get 'modulos/vigilancia'
-
-  get 'modulos/aseo'
-
-  get 'modulos/intercepcion'
-
-  get 'modulos/recepcion'
-
-  get 'modulos/misiones'
-
-  get 'modulos/cafeteria'
-
-  get 'modulos/alabanza'
-
-  get 'modulos/renuevos'
-
-  get 'modulos/evangelismo'
-
-  get 'modulos/publicidad'
-
-  get 'modulos/audiovisuales'
-
-  get 'modulos/protemplo'
-
-  get 'damas/Dorcas'
+  
 
   resources :directivas
 
