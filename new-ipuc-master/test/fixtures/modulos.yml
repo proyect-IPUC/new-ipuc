@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  miembros: MyString
+  eventos: MyString
+  plan_trabajo: MyString
+  directivas_id: 
+
+two:
+  miembros: MyString
+  eventos: MyString
+  plan_trabajo: MyString
+  directivas_id: 
