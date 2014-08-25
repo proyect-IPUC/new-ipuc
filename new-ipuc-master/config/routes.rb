@@ -1,5 +1,25 @@
 Rails.application.routes.draw do
 
+  resources :servicios
+
+  resources :otrosings
+
+  resources :pagaeventos
+
+  resources :diezanus
+
+  resources :dieztris
+
+  resources :diezsems
+
+  resources :diezdia
+
+  resources :ofrendanuals
+
+  resources :ofrendatris
+
+  resources :ofrendasems
+
   resources :ofrendadia
 
   resources :directivas do
