@@ -4,7 +4,7 @@ class OfrendadiaController < ApplicationController
   # GET /ofrendadia
   # GET /ofrendadia.json
   def index
-    @ofrendadia = Ofrendadium.all
+    @ofrendadia = Ofrendadium.search(params[:search], params[:page])
   end
 
   # GET /ofrendadia/1

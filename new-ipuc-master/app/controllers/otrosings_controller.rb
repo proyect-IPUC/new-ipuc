@@ -4,7 +4,7 @@ class OtrosingsController < ApplicationController
   # GET /otrosings
   # GET /otrosings.json
   def index
-    @otrosings = Otrosing.all
+    @otrosings = Otrosing.search(params[:search], params[:page])
   end
 
   # GET /otrosings/1

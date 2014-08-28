@@ -1,7 +1,15 @@
 <%- model_class = Ofrendadium -%>
 <div class="page-header">
-  <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
+  <h1><%=t '.title', :default => 'Ofrenda dia' %></h1>
 </div>
+<div id="cont">
+        <%= form_tag ofrendadia_path, :method => 'get' do %>
+        <% content_tag :label do %>
+        Search term:
+        <%= text_field_tag :search, params[:search] %>
+        <%= submit_tag "Buscar", :name => nil %>
+     <% end %>
+<% end %>
 <table class="table table-striped">
   <thead>
     <tr>
@@ -36,3 +44,8 @@
 <%= link_to t('.new', :default => t("helpers.links.new")),
             new_ofrendadium_path,
             :class => 'btn btn-primary' %>
+<%= will_paginate @ofrendadia, :previous_label => '&laquo; Anterior', :next_label => 'Siguiente &raquo;' %>
+<br>
+Ofrendadia: <%= @ofrendadia.count %>
+<br>
+Valor Recaudado :<%= Ofrendadium.sum(:valor) %>

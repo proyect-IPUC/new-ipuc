@@ -4,7 +4,7 @@ class DiezdiaController < ApplicationController
   # GET /diezdia
   # GET /diezdia.json
   def index
-    @diezdia = Diezdium.all
+    @diezdia = Diezdium.search(params[:search], params[:page])
   end
 
   # GET /diezdia/1

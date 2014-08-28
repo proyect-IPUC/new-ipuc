@@ -4,7 +4,7 @@ class PagaeventosController < ApplicationController
   # GET /pagaeventos
   # GET /pagaeventos.json
   def index
-    @pagaeventos = Pagaevento.all
+    @pagaeventos = Pagaevento.search(params[:search], params[:page])
   end
 
   # GET /pagaeventos/1

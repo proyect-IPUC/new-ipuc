@@ -4,7 +4,7 @@ class OfrendatrisController < ApplicationController
   # GET /ofrendatris
   # GET /ofrendatris.json
   def index
-    @ofrendatris = Ofrendatri.all
+    @ofrendatris = Ofrendatri.search(params[:search], params[:page])
   end
 
   # GET /ofrendatris/1

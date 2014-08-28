@@ -4,7 +4,7 @@ class DiezsemsController < ApplicationController
   # GET /diezsems
   # GET /diezsems.json
   def index
-    @diezsems = Diezsem.all
+    @diezsems = Diezsem.search(params[:search], params[:page])
   end
 
   # GET /diezsems/1

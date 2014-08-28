@@ -4,7 +4,7 @@ class OfrendanualsController < ApplicationController
   # GET /ofrendanuals
   # GET /ofrendanuals.json
   def index
-    @ofrendanuals = Ofrendanual.all
+    @ofrendanuals = Ofrendanual.search(params[:search], params[:page])
   end
 
   # GET /ofrendanuals/1

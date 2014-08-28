@@ -1,7 +1,15 @@
 <%- model_class = Pagaevento -%>
 <div class="page-header">
-  <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
+  <h1><%=t '.title', :default => 'Eventos' %></h1>
 </div>
+<div id="cont">
+        <%= form_tag pagaeventos_path, :method => 'get' do %>
+        <% content_tag :label do %>
+        Search term:
+        <%= text_field_tag :search, params[:search] %>
+        <%= submit_tag "Buscar", :name => nil %>
+     <% end %>
+<% end %>
 <table class="table table-striped">
   <thead>
     <tr>
@@ -38,3 +46,8 @@
 <%= link_to t('.new', :default => t("helpers.links.new")),
             new_pagaevento_path,
             :class => 'btn btn-primary' %>
+<%= will_paginate @pagaevento, :previous_label => '&laquo; Anterior', :next_label => 'Siguiente &raquo;' %>
+<br>
+Pagaeventos: <%= @pagaeventos.count %>
+<br>
+Valor Recaudado :<%= Pagaevento.sum(:valor) %>

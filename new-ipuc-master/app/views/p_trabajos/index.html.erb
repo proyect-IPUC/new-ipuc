@@ -42,3 +42,6 @@
 <%= link_to t('.new', :default => t("helpers.links.new")),
             new_p_trabajo_path,
             :class => 'btn btn-primary' %>
+<%= will_paginate @p_trabajo, :previous_label => '&laquo; Anterior', :next_label => 'Siguiente &raquo;' %>
+<br>
+P_trabajos: <%= @p_trabajos.count %>

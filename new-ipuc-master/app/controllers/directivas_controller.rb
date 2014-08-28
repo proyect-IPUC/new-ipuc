@@ -4,7 +4,7 @@ class DirectivasController < ApplicationController
   # GET /directivas
   # GET /directivas.json
   def index
-    @directivas = Directiva.all
+    @directivas = Directiva.search(params[:search], params[:page])
   end
 
   # GET /directivas/1

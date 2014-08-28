@@ -1,7 +1,7 @@
 class CreateOfrendadia < ActiveRecord::Migration
   def change
     create_table :ofrendadia do |t|
-      t.string :valor
+      t.integer :valor
       t.date :dia
 
       t.timestamps

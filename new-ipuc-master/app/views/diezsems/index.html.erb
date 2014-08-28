@@ -1,7 +1,15 @@
 <%- model_class = Diezsem -%>
 <div class="page-header">
-  <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
+  <h1><%=t '.title', :default => 'Diezmo semanal' %></h1>
 </div>
+<div id="cont">
+        <%= form_tag diezsems_path, :method => 'get' do %>
+        <% content_tag :label do %>
+        Search term:
+        <%= text_field_tag :search, params[:search] %>
+        <%= submit_tag "Buscar", :name => nil %>
+     <% end %>
+<% end %>
 <table class="table table-striped">
   <thead>
     <tr>
@@ -36,3 +44,7 @@
 <%= link_to t('.new', :default => t("helpers.links.new")),
             new_diezsem_path,
             :class => 'btn btn-primary' %>
+            <%= will_paginate @diezsem, :previous_label => '&laquo; Anterior', :next_label => 'Siguiente &raquo;' %>
+<br>
+Diezsems: <%= @diezsems.count %>
+Valor Recaudado :<%= Diezsem.sum(:valor) %>

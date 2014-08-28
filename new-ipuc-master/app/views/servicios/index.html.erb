@@ -2,6 +2,14 @@
 <div class="page-header">
   <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
 </div>
+<div id="cont">
+        <%= form_tag servicios_path, :method => 'get' do %>
+        <% content_tag :label do %>
+        Search term:
+        <%= text_field_tag :search, params[:search] %>
+        <%= submit_tag "Buscar", :name => nil %>
+     <% end %>
+<% end %>
 <table class="table table-striped">
   <thead>
     <tr>
@@ -38,3 +46,9 @@
 <%= link_to t('.new', :default => t("helpers.links.new")),
             new_servicio_path,
             :class => 'btn btn-primary' %>
+            <%= will_paginate @servicio, :previous_label => '&laquo; Anterior', :next_label => 'Siguiente &raquo;' %>
+<br>
+Servivios: <%= @servicios.count %>
+
+<br>
+Valor Recaudado :<%= Servicio.sum(:valor) %>

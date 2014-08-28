@@ -4,7 +4,7 @@ class DiezanusController < ApplicationController
   # GET /diezanus
   # GET /diezanus.json
   def index
-    @diezanus = Diezanu.all
+    @diezanus = Diezanu.search(params[:search], params[:page])
   end
 
   # GET /diezanus/1

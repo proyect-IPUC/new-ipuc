@@ -1,14 +1,21 @@
 <%- model_class = Diezanu -%>
 <div class="page-header">
-  <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
+  <h1><%=t '.title', :default => 'Diesmo Anual' %></h1>
 </div>
+    <%= form_tag diezanus_path, :method => 'get' do %>
+    <% content_tag :label do %>
+    Search term:
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Buscar", :name => nil %>
+<% end %>
+<% end %>
+
 <table class="table table-striped">
   <thead>
     <tr>
       <th><%= model_class.human_attribute_name(:id) %></th>
       <th><%= model_class.human_attribute_name(:valor) %></th>
-      <th><%= model_class.human_attribute_name(:dia) %></th>
-      <th><%= model_class.human_attribute_name(:created_at) %></th>
+      <th><%= model_class.human_attribute_name(:año) %></th>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
   </thead>
@@ -18,7 +25,6 @@
         <td><%= link_to diezanu.id, diezanu_path(diezanu) %></td>
         <td><%= diezanu.valor %></td>
         <td><%= diezanu.dia %></td>
-        <td><%=l diezanu.created_at %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
                       edit_diezanu_path(diezanu), :class => 'btn btn-mini' %>
@@ -36,3 +42,8 @@
 <%= link_to t('.new', :default => t("helpers.links.new")),
             new_diezanu_path,
             :class => 'btn btn-primary' %>
+            <%= will_paginate @diezanus, :previous_label => '&laquo; Anterior', :next_label => 'Siguiente &raquo;' %>
+<br>
+Diezanus: <%= @diezanus.count %>
+<br>
+Valor Recaudado :<%= Diezanu.sum(:valor) %>

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140825163852) do
+ActiveRecord::Schema.define(version: 20140827193838) do
 
   create_table "alabanzas", force: true do |t|
     t.datetime "created_at"
@@ -51,6 +51,20 @@ ActiveRecord::Schema.define(version: 20140825163852) do
   create_table "diezdia", force: true do |t|
     t.string   "valor"
     t.date     "dia"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "diezmotrims", force: true do |t|
+    t.string   "valor"
+    t.date     "trimestral"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "diezmotris", force: true do |t|
+    t.string   "valor"
+    t.date     "trimestral"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -145,7 +159,7 @@ ActiveRecord::Schema.define(version: 20140825163852) do
   end
 
   create_table "ofrendadia", force: true do |t|
-    t.string   "valor"
+    t.integer  "valor"
     t.date     "dia"
     t.datetime "created_at"
     t.datetime "updated_at"

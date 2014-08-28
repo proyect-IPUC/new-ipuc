@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :diezmotris
+
   resources :servicios
 
   resources :otrosings
@@ -7,8 +9,6 @@ Rails.application.routes.draw do
   resources :pagaeventos
 
   resources :diezanus
-
-  resources :dieztris
 
   resources :diezsems
 

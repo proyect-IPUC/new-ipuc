@@ -4,7 +4,7 @@ class PTrabajosController < ApplicationController
   # GET /p_trabajos
   # GET /p_trabajos.json
   def index
-    @p_trabajos = PTrabajo.all
+    @p_trabajos = PTrabajo.search(params[:search], params[:page])
   end
 
   # GET /p_trabajos/1
