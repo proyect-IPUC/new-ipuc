@@ -11,7 +11,18 @@ class CancionsController < ApplicationController
   # GET /cancions/1
   # GET /cancions/1.json
   def show
+    @cancion = Cancion.find(params[:id])
+    respond_to do |format|
+      format.html
+      format.pdf do
+        pdf = CancionPdf.new(@cancion)
+        send_data pdf.render, filename: "cancion_#{@cancion_number}.pdf",
+                              type: "application/pdf"
+      end
+    end
   end
+
+  
 
   # GET /cancions/new
   def new
@@ -70,6 +81,6 @@ class CancionsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def cancion_params
-      params.require(:cancion).permit(:cancion, :genero, :artista)
+      params.require(:cancion).permit(:cancion, :genero, :artista, :letra)
     end
 end

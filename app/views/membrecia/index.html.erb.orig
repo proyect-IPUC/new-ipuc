@@ -1,10 +1,9 @@
 <%- model_class = Membrecium -%>
-<<<<<<< HEAD
+
 
 <div id="cont">
 
-=======
->>>>>>> f0553bd5aae2c47e861bb097048fd36c0e7321a4
+
 <%= form_tag membrecia_path, :method => 'get' do %>
 <% content_tag :label do %>
 Search term:
@@ -12,10 +11,9 @@ Search term:
 <%= submit_tag "Buscar", :name => nil %>
 <% end %>
 <% end %>
-<<<<<<< HEAD
+
 </div>
-=======
->>>>>>> f0553bd5aae2c47e861bb097048fd36c0e7321a4
+
 <table class="table table-striped">
   <thead>
     <tr>

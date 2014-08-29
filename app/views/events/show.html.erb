@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @event.title %>
+</p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @event.description %>
+</p>
+
+<p>
+  <strong>Start:</strong>
+  <%= @event.start %>
+</p>
+
+<p>
+  <strong>End:</strong>
+  <%= @event.end %>
+</p>
+
+<%= link_to 'Edit', edit_event_path(@event) %> |
+<%= link_to 'Delete', event_path(@event), method: :delete, :data => {:confirm => t('.confirm', :default => t("helpers.links.confirm", :default => ""))} %> |
+<%= link_to 'Back', events_path %>

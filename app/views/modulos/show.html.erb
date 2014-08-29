@@ -4,22 +4,20 @@
 </div>
 
 <dl class="dl-horizontal">
-  <dt><strong><%= model_class.human_attribute_name(:miembros) %>:</strong></dt>
-  <dd><%= @modulo.miembros %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:membrecium_id) %>:</strong></dt>
+  <dd><%= @modulo.membrecium_id %></dd>
   <dt><strong><%= model_class.human_attribute_name(:eventos) %>:</strong></dt>
   <dd><%= @modulo.eventos %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:plan_trabajo) %>:</strong></dt>
-  <dd><%= @modulo.plan_trabajo %></dd>
 
 </dl>
 
 <div class="form-actions">
   <%= link_to t('.back', :default => t("helpers.links.back")),
-              modulos_path, :class => 'btn'  %>
+              modulo_path, :class => 'btn'  %>
   <%= link_to t('.edit', :default => t("helpers.links.edit")),
-              edit_modulo_path(@modulo), :class => 'btn' %>
+              edit_modulo_path(modulo), :class => 'btn' %>
   <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
-              modulo_path(@modulo),
+              modulo_path(modulo),
               :method => 'delete',
               :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
               :class => 'btn btn-danger' %>

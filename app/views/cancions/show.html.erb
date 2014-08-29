@@ -11,13 +11,18 @@
   <dd><%= @cancion.genero %></dd>
   <dt><strong><%= model_class.human_attribute_name(:artista) %>:</strong></dt>
   <dd><%= @cancion.artista %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:letra) %>:</strong></dt>
+  <dd><%= @cancion.letra %></dd>
+
+
 </dl>
 
 <div class="form-actions">
+  <p><%= link_to 'Generar (PDF)', cancion_path(@cancion, format: 'pdf')%></P> 
   <%= link_to t('.back', :default => t("helpers.links.Atras")),
               cancions_path, :class => 'btn'  %>
   <%= link_to t('.edit', :default => t("helpers.links.Editar")),
-              edit_cancion_path(@cancion), :class => 'btn' %>
+              edit_cancion_path(@cancion), :class => 'btn btn-info' %>
   <%= link_to t('.destroy', :default => t("helpers.links.Eliminar")),
               cancion_path(@cancion),
               :method => 'delete',

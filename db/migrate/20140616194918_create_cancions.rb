@@ -4,6 +4,7 @@ class CreateCancions < ActiveRecord::Migration
       t.string :cancion
       t.string :genero
       t.string :artista
+      t.text :letra
 
       t.timestamps
     end

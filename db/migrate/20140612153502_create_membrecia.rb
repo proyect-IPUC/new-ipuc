@@ -9,7 +9,7 @@ class CreateMembrecia < ActiveRecord::Migration
       t.boolean :recibioEspiritu
       t.date :fecha
       t.text :comentarios
-
+      
       t.timestamps
     end
   end

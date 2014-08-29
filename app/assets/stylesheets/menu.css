@@ -139,7 +139,9 @@ right: 230px;
 position: absolute;
 bottom: -600px;
 right: -350px;
-
+opacity: 0.7;
+width: 100px;
+height:100px;
 }
 
 

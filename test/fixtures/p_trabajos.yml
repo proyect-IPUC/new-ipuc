@@ -1,15 +1,17 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  NombrePlanTrabajo: MyString
-  fechaPlanTrabajo: MyString
-  DescripcionPlan: MyText
-  Aprobada?: false
-  Observacion: MyText
+  nombrep_trabajo: MyString
+  fechap_trabajo: 2014-08-27
+  descriptionp_trabajo: MyText
+  aprobado?: false
+  observacion: MyText
+  directiva_id: 
 
 two:
-  NombrePlanTrabajo: MyString
-  fechaPlanTrabajo: MyString
-  DescripcionPlan: MyText
-  Aprobada?: false
-  Observacion: MyText
+  nombrep_trabajo: MyString
+  fechap_trabajo: 2014-08-27
+  descriptionp_trabajo: MyText
+  aprobado?: false
+  observacion: MyText
+  directiva_id: 

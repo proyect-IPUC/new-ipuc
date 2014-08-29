@@ -11,32 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140820154926) do
-
-  create_table "alabanzas", force: true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "aseos", force: true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "audiovisuales", force: true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
+ActiveRecord::Schema.define(version: 20140827203820) do
 
   create_table "cancions", force: true do |t|
     t.string   "cancion"
     t.string   "genero"
     t.string   "artista"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "damas_dcs", force: true do |t|
+    t.text     "letra"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -48,37 +29,11 @@ ActiveRecord::Schema.define(version: 20140820154926) do
     t.datetime "updated_at"
   end
 
-  create_table "esc_doms", force: true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "evangelismos", force: true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "eventos", force: true do |t|
-    t.string   "evento"
-    t.text     "descripcion"
-    t.date     "fecha"
-    t.time     "hora_inicio"
-    t.time     "hora_final"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "intercepcions", force: true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "jovenes", force: true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "junta", force: true do |t|
+  create_table "events", force: true do |t|
+    t.string   "title"
+    t.text     "description"
+    t.datetime "start"
+    t.datetime "end"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -94,23 +49,34 @@ ActiveRecord::Schema.define(version: 20140820154926) do
     t.text     "comentarios"
     t.datetime "created_at"
     t.datetime "updated_at"
-  end
-
-  create_table "misiones", force: true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.string   "cover_file_name"
+    t.string   "cover_content_type"
+    t.integer  "cover_file_size"
+    t.datetime "cover_updated_at"
   end
 
   create_table "modulos", force: true do |t|
-    t.string   "miembros"
+    t.integer  "membrecium_id"
     t.string   "eventos"
-    t.string   "plan_trabajo"
     t.integer  "directivas_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   add_index "modulos", ["directivas_id"], name: "index_modulos_on_directivas_id"
+
+  create_table "p_trabajos", force: true do |t|
+    t.string   "nombrep_trabajo"
+    t.date     "fechap_trabajo"
+    t.text     "descriptionp_trabajo"
+    t.boolean  "aprobado?"
+    t.text     "observacion"
+    t.integer  "directiva_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "p_trabajos", ["directiva_id"], name: "index_p_trabajos_on_directiva_id"
 
   create_table "paginadis", force: true do |t|
     t.string   "diezmo"
@@ -132,31 +98,6 @@ ActiveRecord::Schema.define(version: 20140820154926) do
 
   create_table "paginas", force: true do |t|
     t.string   "ofrenda"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "protemplos", force: true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "publicidads", force: true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "recepcions", force: true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "renuevos", force: true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "vigilancia", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -71,6 +71,6 @@ class MembreciaController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def membrecium_params
-      params.require(:membrecium).permit(:nombre, :apellidos, :telefono, :direccion, :email, :recibioEspiritu, :fecha, :comentarios)
+      params.require(:membrecium).permit(:nombre, :apellidos, :telefono, :direccion, :email, :recibioEspiritu, :fecha, :comentarios, :cover)
     end
 end

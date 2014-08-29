@@ -21,7 +21,7 @@
     <% @directivas.each do |directiva| %>
 
       <tr>
-         <td><%=link_to 'Examinar('+ directiva.modulos.count.to_s + ')',directiva_modulos_path(directiva) %></td>
+        <td><%=link_to 'Examinar =>'+ directiva.modulos.count.to_s + '',directiva_modulos_path(directiva), :class => 'btn btn-success' %></td>
         <td><%= link_to directiva.id, directiva_path(directiva) %></td>
         <td><%=link_to directiva.nombre %></td>
         <td><%= directiva.descripcion %></td>
@@ -34,7 +34,10 @@
                       :method => :delete,
                       :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
                       :class => 'btn btn-mini btn-danger' %>
+          <%= link_to 'Plan Trabajo', directiva_p_trabajos_path(directiva), :class => 'btn btn-warning' %>
         </td>
+
+    
       </tr>
     <% end %>
   </tbody>

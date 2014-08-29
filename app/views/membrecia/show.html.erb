@@ -19,17 +19,12 @@
   <dt><strong><%= model_class.human_attribute_name(:fecha) %>:</strong></dt>
   <dd><%= @membrecium.fecha %></dd>
   <dt><strong><%= model_class.human_attribute_name(:comentarios) %>:</strong></dt>
-  <dd><%= @membrecium.comentarios %></dd>z
+  <dd><%= @membrecium.comentarios %></dd>
+ 
 </dl>
-
+<%= image_tag @membrecium.cover.url(:thumb)%>
 <div class="form-actions">
   <%= link_to t('.back', :default => t("helpers.links.back")),
               membrecia_path, :class => 'btn'  %>
-  <%= link_to t('.edit', :default => t("helpers.links.edit")),
-              edit_membrecium_path(@membrecium), :class => 'btn' %>
-  <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
-              membrecium_path(@membrecium),
-              :method => 'delete',
-              :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
-              :class => 'btn btn-danger' %>
+  
 </div>

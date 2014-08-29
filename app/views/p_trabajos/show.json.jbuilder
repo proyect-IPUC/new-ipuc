@@ -1,1 +1,1 @@
-json.extract! @p_trabajo, :id, :NombrePlanTrabajo, :fechaPlanTrabajo, :DescripcionPlan, :Aprobada?, :Observacion, :created_at, :updated_at
+json.extract! @p_trabajo, :id, :nombrep_trabajo, :fechap_trabajo, :descriptionp_trabajo, :aprobado?, :observacion, :directiva_id, :created_at, :updated_at

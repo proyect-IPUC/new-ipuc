@@ -23,6 +23,7 @@ Search term:
       <th><%= model_class.human_attribute_name(:recibio_ESP_SANT) %></th>
       <th><%= model_class.human_attribute_name(:fecha) %></th>
       <th><%= model_class.human_attribute_name(:comentarios) %></th>
+      <th><%= model_class.human_attribute_name(:examinar) %></th>
       <th><%= model_class.human_attribute_name(:created_at) %></th>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
@@ -30,7 +31,7 @@ Search term:
   <tbody>
     <% @membrecia.each do |membrecium| %>
       <tr>
-        <td><%= link_to membrecium.id, membrecium_path(membrecium) %></td>
+        <td><%= link_to membrecium.id %></td>
         <td><%= membrecium.nombre %></td>
         <td><%= membrecium.apellidos %></td>
         <td><%= membrecium.telefono %></td>
@@ -39,6 +40,8 @@ Search term:
         <td><%= membrecium.recibioEspiritu %></td>
         <td><%= membrecium.fecha %></td>
         <td><%= membrecium.comentarios %></td>
+        <td><%= link_to t('.show', :default => t("helpers.links.Ver")),
+                      membrecium_path(membrecium), :class => 'btn btn-success' %></td>
         <td><%=l membrecium.created_at %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.Editar")),

@@ -1,13 +1,20 @@
 Rails.application.routes.draw do
+  
+  resources :events
+
+  resources :p_trabajos
+
+  resources :cancions do
+      resources :letracancs
+  end
 
   resources :directivas do
        resources :modulos
   end
 
-  resources :p_trabajos
-
-
-  resources :p_trabajos
+resources :directivas do
+       resources :p_trabajos
+  end
 
   resources :miembrs
 
@@ -29,8 +36,6 @@ Rails.application.routes.draw do
   #get 'static_pages/biblia' 
   match '/biblia', to: 'static_pages#biblia',  via: 'get'
   resources :cancions
-
-  resources :eventos
 
   resources :membrecia
 

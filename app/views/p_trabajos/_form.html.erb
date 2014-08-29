@@ -1,9 +1,10 @@
 <%= simple_form_for @p_trabajo, :html => { :class => 'form-horizontal' } do |f| %>
-  <%= f.input :NombrePlanTrabajo %>
-  <%= f.input :fechaPlanTrabajo %>
-  <%= f.input :DescripcionPlan %>
-  <%= f.input :Aprobada? %>
-  <%= f.input :Observacion %>
+  <%= f.input :nombrep_trabajo %>
+  <%= f.input :fechap_trabajo %>
+  <%= f.input :descriptionp_trabajo %>
+  <%= f.input :aprobado? %>
+  <%= f.input :observacion %>
+  <%= f.input :directiva_id %>
   <div class="form-actions">
     <%= f.button :submit, :class => 'btn-primary' %>
     <%= link_to t('.cancel', :default => t("helpers.links.cancel")),

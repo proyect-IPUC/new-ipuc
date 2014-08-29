@@ -18,7 +18,7 @@ class PTrabajosControllerTest < ActionController::TestCase
 
   test "should create p_trabajo" do
     assert_difference('PTrabajo.count') do
-      post :create, p_trabajo: { Aprobada?: @p_trabajo.Aprobada?, DescripcionPlan: @p_trabajo.DescripcionPlan, NombrePlanTrabajo: @p_trabajo.NombrePlanTrabajo, Observacion: @p_trabajo.Observacion, fechaPlanTrabajo: @p_trabajo.fechaPlanTrabajo }
+      post :create, p_trabajo: { aprobado?: @p_trabajo.aprobado?, descriptionp_trabajo: @p_trabajo.descriptionp_trabajo, directiva_id: @p_trabajo.directiva_id, fechap_trabajo: @p_trabajo.fechap_trabajo, nombrep_trabajo: @p_trabajo.nombrep_trabajo, observacion: @p_trabajo.observacion }
     end
 
     assert_redirected_to p_trabajo_path(assigns(:p_trabajo))
@@ -35,7 +35,7 @@ class PTrabajosControllerTest < ActionController::TestCase
   end
 
   test "should update p_trabajo" do
-    patch :update, id: @p_trabajo, p_trabajo: { Aprobada?: @p_trabajo.Aprobada?, DescripcionPlan: @p_trabajo.DescripcionPlan, NombrePlanTrabajo: @p_trabajo.NombrePlanTrabajo, Observacion: @p_trabajo.Observacion, fechaPlanTrabajo: @p_trabajo.fechaPlanTrabajo }
+    patch :update, id: @p_trabajo, p_trabajo: { aprobado?: @p_trabajo.aprobado?, descriptionp_trabajo: @p_trabajo.descriptionp_trabajo, directiva_id: @p_trabajo.directiva_id, fechap_trabajo: @p_trabajo.fechap_trabajo, nombrep_trabajo: @p_trabajo.nombrep_trabajo, observacion: @p_trabajo.observacion }
     assert_redirected_to p_trabajo_path(assigns(:p_trabajo))
   end
 

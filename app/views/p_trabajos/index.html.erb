@@ -6,11 +6,12 @@
   <thead>
     <tr>
       <th><%= model_class.human_attribute_name(:id) %></th>
-      <th><%= model_class.human_attribute_name(:NombrePlanTrabajo) %></th>
-      <th><%= model_class.human_attribute_name(:fechaPlanTrabajo) %></th>
-      <th><%= model_class.human_attribute_name(:DescripcionPlan) %></th>
-      <th><%= model_class.human_attribute_name(:Aprobada?) %></th>
-      <th><%= model_class.human_attribute_name(:Observacion) %></th>
+      <th><%= model_class.human_attribute_name(:nombrep_trabajo) %></th>
+      <th><%= model_class.human_attribute_name(:fechap_trabajo) %></th>
+      <th><%= model_class.human_attribute_name(:descriptionp_trabajo) %></th>
+      <th><%= model_class.human_attribute_name(:aprobado?) %></th>
+      <th><%= model_class.human_attribute_name(:observacion) %></th>
+      <th><%= model_class.human_attribute_name(:directiva_id) %></th>
       <th><%= model_class.human_attribute_name(:created_at) %></th>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
@@ -19,11 +20,12 @@
     <% @p_trabajos.each do |p_trabajo| %>
       <tr>
         <td><%= link_to p_trabajo.id, p_trabajo_path(p_trabajo) %></td>
-        <td><%= p_trabajo.NombrePlanTrabajo %></td>
-        <td><%= p_trabajo.fechaPlanTrabajo %></td>
-        <td><%= p_trabajo.DescripcionPlan %></td>
-        <td><%= p_trabajo.Aprobada? %></td>
-        <td><%= p_trabajo.Observacion %></td>
+        <td><%= p_trabajo.nombrep_trabajo %></td>
+        <td><%= p_trabajo.fechap_trabajo %></td>
+        <td><%= p_trabajo.descriptionp_trabajo %></td>
+        <td><%= p_trabajo.aprobado? %></td>
+        <td><%= p_trabajo.observacion %></td>
+        <td><%= p_trabajo.directiva_id %></td>
         <td><%=l p_trabajo.created_at %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),

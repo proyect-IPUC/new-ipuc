@@ -9,7 +9,6 @@
       <th><%= model_class.human_attribute_name(:id) %></th>
       <th><%= model_class.human_attribute_name(:Miembros) %></th>
       <th><%= model_class.human_attribute_name(:eventos) %></th>
-      <th><%= model_class.human_attribute_name(:Plan_De_Trabajo) %></th>
       <th><%= model_class.human_attribute_name(:Directiva_id) %></th>
       <th><%= model_class.human_attribute_name(:created_at) %></th>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
@@ -18,10 +17,10 @@
   <tbody>
     <% @modulos.each do |modulo| %>
       <tr>
-        <td><%= link_to modulo.id, directiva_modulo_path(@directiva,modulo) %></td>
-        <td><%= modulo.miembros %></td>
-        <td><%= modulo.eventos %></td>
-        <td><%= modulo.plan_trabajo %></td>
+        <td><%= link_to modulo.id  %></td>
+        <td><%= modulo.membrecium.nombre %></td>
+        <td><%= link_to t('.show', :default => t("helpers.links.Ver")),
+                      events_path(@events), :class => 'btn btn-success' %></td>
         <td><%= modulo.directiva.nombre %></td>
         <td><%= modulo.created_at %></td>
         <td>

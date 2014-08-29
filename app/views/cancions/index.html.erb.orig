@@ -25,6 +25,7 @@
       <th><%= model_class.human_attribute_name(:cancion) %></th>
       <th><%= model_class.human_attribute_name(:genero) %></th>
       <th><%= model_class.human_attribute_name(:artista) %></th>
+      <th><%= model_class.human_attribute_name(:letra) %></th>
       <th><%= model_class.human_attribute_name(:created_at) %></th>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
@@ -36,6 +37,7 @@
         <td><%= cancion.cancion %></td>
         <td><%= cancion.genero %></td>
         <td><%= cancion.artista %></td>
+        <td><%= cancion.letra %></td>
         <td><%=l cancion.created_at %></td>
         <td>
            <%= link_to t('.show', :default => t("helpers.links.show")),
