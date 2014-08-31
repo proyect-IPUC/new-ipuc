@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  actividad: MyString
+  valor: MyString
+  dia: 2014-08-25
+
+two:
+  actividad: MyString
+  valor: MyString
+  dia: 2014-08-25

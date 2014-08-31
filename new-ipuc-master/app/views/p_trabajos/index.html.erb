@@ -1,0 +1,47 @@
+<%- model_class = PTrabajo -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
+</div>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th><%= model_class.human_attribute_name(:id) %></th>
+      <th><%= model_class.human_attribute_name(:NombrePlanTrabajo) %></th>
+      <th><%= model_class.human_attribute_name(:fechaPlanTrabajo) %></th>
+      <th><%= model_class.human_attribute_name(:DescripcionPlan) %></th>
+      <th><%= model_class.human_attribute_name(:Aprobada?) %></th>
+      <th><%= model_class.human_attribute_name(:Observacion) %></th>
+      <th><%= model_class.human_attribute_name(:created_at) %></th>
+      <th><%=t '.actions', :default => t("helpers.actions") %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @p_trabajos.each do |p_trabajo| %>
+      <tr>
+        <td><%= link_to p_trabajo.id, p_trabajo_path(p_trabajo) %></td>
+        <td><%= p_trabajo.NombrePlanTrabajo %></td>
+        <td><%= p_trabajo.fechaPlanTrabajo %></td>
+        <td><%= p_trabajo.DescripcionPlan %></td>
+        <td><%= p_trabajo.Aprobada? %></td>
+        <td><%= p_trabajo.Observacion %></td>
+        <td><%=l p_trabajo.created_at %></td>
+        <td>
+          <%= link_to t('.edit', :default => t("helpers.links.edit")),
+                      edit_p_trabajo_path(p_trabajo), :class => 'btn btn-mini' %>
+          <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                      p_trabajo_path(p_trabajo),
+                      :method => :delete,
+                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                      :class => 'btn btn-mini btn-danger' %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to t('.new', :default => t("helpers.links.new")),
+            new_p_trabajo_path,
+            :class => 'btn btn-primary' %>
+<%= will_paginate @p_trabajo, :previous_label => '&laquo; Anterior', :next_label => 'Siguiente &raquo;' %>
+<br>
+P_trabajos: <%= @p_trabajos.count %>
