@@ -1,14 +1,25 @@
 <%- model_class = Modulo -%>
 <div class="page-header">
   <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
+
+
+  <!--eventos de las directivas boton--> 
 </div>
+<div id="Event">
+<td><%= link_to t('.show', :default => t("helpers.links.Ver Eventos")),
+                      events_path(@events), :class => 'btn btn-success btn-lg dropdown-toggle' %></td>
+</div>
+
+
+<!--tabla donde estan los miembros de las directivas con su respectivo cargo--> 
 <table class="table table-striped">
   <thead>
     <tr>
       
       <th><%= model_class.human_attribute_name(:id) %></th>
       <th><%= model_class.human_attribute_name(:Miembros) %></th>
-      <th><%= model_class.human_attribute_name(:eventos) %></th>
+      <th><%= model_class.human_attribute_name(:ver) %></th>
+      <th><%= model_class.human_attribute_name(:cargo) %></th>
       <th><%= model_class.human_attribute_name(:Directiva_id) %></th>
       <th><%= model_class.human_attribute_name(:created_at) %></th>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
@@ -18,25 +29,27 @@
     <% @modulos.each do |modulo| %>
       <tr>
         <td><%= link_to modulo.id  %></td>
-        <td><%= modulo.membrecium.nombre %></td>
+        <td><%= modulo.membrecium.nombre%></td>
         <td><%= link_to t('.show', :default => t("helpers.links.Ver")),
-                      events_path(@events), :class => 'btn btn-success' %></td>
+                      membrecium_path(modulo.membrecium), :class => 'btn btn-success' %></td>
+        <td><%= modulo.cargo %></td>
         <td><%= modulo.directiva.nombre %></td>
         <td><%= modulo.created_at %></td>
         <td>
-          <%= link_to t('.edit', :default => t("helpers.links.edit")),
+          <%= link_to t('.edit', :default => t("helpers.links.Editar")),
                       edit_directiva_modulo_path(@directiva,modulo), :class => 'btn btn-mini' %>
-          <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+          <%= link_to t('.destroy', :default => t("helpers.links.Eliminar")),
                       directiva_modulo_path(@directiva,modulo),
                       :method => :delete,
-                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Seguro de Eliminar?')) },
                       :class => 'btn btn-mini btn-danger' %>
         </td>
+
       </tr>
     <% end %>
   </tbody>
 </table>
 
-<%= link_to t('.new', :default => t("helpers.links.new")),
+<%= link_to t('.new', :default => t("helpers.links.Nuevo Miembro")),
             new_directiva_modulo_path(@directiva),
             :class => 'btn btn-primary' %>

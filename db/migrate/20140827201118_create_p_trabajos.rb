@@ -4,7 +4,7 @@ class CreatePTrabajos < ActiveRecord::Migration
       t.string :nombrep_trabajo
       t.date :fechap_trabajo
       t.text :descriptionp_trabajo
-      t.boolean :aprobado?
+      t.boolean :aprobado
       t.text :observacion
       t.references :directiva, index: true
 

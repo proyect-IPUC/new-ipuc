@@ -1,5 +1,4 @@
 class StaticPagesController < ApplicationController
-  def biblia
-  	
-  end
+   before_filter :require_login, :except => [:home, :help, :contact, :about]
+
 end

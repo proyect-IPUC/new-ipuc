@@ -1,4 +1,33 @@
                   Prefix Verb   URI Pattern                                             Controller#Action
+           user_sessions GET    /user_sessions(.:format)                                user_sessions#index
+                         POST   /user_sessions(.:format)                                user_sessions#create
+        new_user_session GET    /user_sessions/new(.:format)                            user_sessions#new
+       edit_user_session GET    /user_sessions/:id/edit(.:format)                       user_sessions#edit
+            user_session GET    /user_sessions/:id(.:format)                            user_sessions#show
+                         PATCH  /user_sessions/:id(.:format)                            user_sessions#update
+                         PUT    /user_sessions/:id(.:format)                            user_sessions#update
+                         DELETE /user_sessions/:id(.:format)                            user_sessions#destroy
+                   users GET    /users(.:format)                                        users#index
+                         POST   /users(.:format)                                        users#create
+                new_user GET    /users/new(.:format)                                    users#new
+               edit_user GET    /users/:id/edit(.:format)                               users#edit
+                    user GET    /users/:id(.:format)                                    users#show
+                         PATCH  /users/:id(.:format)                                    users#update
+                         PUT    /users/:id(.:format)                                    users#update
+                         DELETE /users/:id(.:format)                                    users#destroy
+                   login GET    /login(.:format)                                        user_sessions#new
+                  logout GET    /logout(.:format)                                       user_sessions#destroy
+       user_sessions_new GET    /user_sessions/new(.:format)                            user_sessions#new
+    user_sessions_create GET    /user_sessions/create(.:format)                         user_sessions#create
+   user_sessions_destroy GET    /user_sessions/destroy(.:format)                        user_sessions#destroy
+                         GET    /users(.:format)                                        users#index
+                         POST   /users(.:format)                                        users#create
+                         GET    /users/new(.:format)                                    users#new
+                         GET    /users/:id/edit(.:format)                               users#edit
+                         GET    /users/:id(.:format)                                    users#show
+                         PATCH  /users/:id(.:format)                                    users#update
+                         PUT    /users/:id(.:format)                                    users#update
+                         DELETE /users/:id(.:format)                                    users#destroy
                   events GET    /events(.:format)                                       events#index
                          POST   /events(.:format)                                       events#create
                new_event GET    /events/new(.:format)                                   events#new
@@ -39,14 +68,6 @@
                          PATCH  /directivas/:directiva_id/modulos/:id(.:format)         modulos#update
                          PUT    /directivas/:directiva_id/modulos/:id(.:format)         modulos#update
                          DELETE /directivas/:directiva_id/modulos/:id(.:format)         modulos#destroy
-              directivas GET    /directivas(.:format)                                   directivas#index
-                         POST   /directivas(.:format)                                   directivas#create
-           new_directiva GET    /directivas/new(.:format)                               directivas#new
-          edit_directiva GET    /directivas/:id/edit(.:format)                          directivas#edit
-               directiva GET    /directivas/:id(.:format)                               directivas#show
-                         PATCH  /directivas/:id(.:format)                               directivas#update
-                         PUT    /directivas/:id(.:format)                               directivas#update
-                         DELETE /directivas/:id(.:format)                               directivas#destroy
     directiva_p_trabajos GET    /directivas/:directiva_id/p_trabajos(.:format)          p_trabajos#index
                          POST   /directivas/:directiva_id/p_trabajos(.:format)          p_trabajos#create
  new_directiva_p_trabajo GET    /directivas/:directiva_id/p_trabajos/new(.:format)      p_trabajos#new
@@ -55,11 +76,11 @@ edit_directiva_p_trabajo GET    /directivas/:directiva_id/p_trabajos/:id/edit(.:
                          PATCH  /directivas/:directiva_id/p_trabajos/:id(.:format)      p_trabajos#update
                          PUT    /directivas/:directiva_id/p_trabajos/:id(.:format)      p_trabajos#update
                          DELETE /directivas/:directiva_id/p_trabajos/:id(.:format)      p_trabajos#destroy
-                         GET    /directivas(.:format)                                   directivas#index
+              directivas GET    /directivas(.:format)                                   directivas#index
                          POST   /directivas(.:format)                                   directivas#create
-                         GET    /directivas/new(.:format)                               directivas#new
-                         GET    /directivas/:id/edit(.:format)                          directivas#edit
-                         GET    /directivas/:id(.:format)                               directivas#show
+           new_directiva GET    /directivas/new(.:format)                               directivas#new
+          edit_directiva GET    /directivas/:id/edit(.:format)                          directivas#edit
+               directiva GET    /directivas/:id(.:format)                               directivas#show
                          PATCH  /directivas/:id(.:format)                               directivas#update
                          PUT    /directivas/:id(.:format)                               directivas#update
                          DELETE /directivas/:id(.:format)                               directivas#destroy

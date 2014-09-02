@@ -10,8 +10,8 @@
   <dd><%= @p_trabajo.fechap_trabajo %></dd>
   <dt><strong><%= model_class.human_attribute_name(:descriptionp_trabajo) %>:</strong></dt>
   <dd><%= @p_trabajo.descriptionp_trabajo %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:aprobado?) %>:</strong></dt>
-  <dd><%= @p_trabajo.aprobado? %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:aprobado) %>:</strong></dt>
+  <dd><%= @p_trabajo.aprobado %></dd>
   <dt><strong><%= model_class.human_attribute_name(:observacion) %>:</strong></dt>
   <dd><%= @p_trabajo.observacion %></dd>
   <dt><strong><%= model_class.human_attribute_name(:directiva_id) %>:</strong></dt>
@@ -19,13 +19,13 @@
 </dl>
 
 <div class="form-actions">
-  <%= link_to t('.back', :default => t("helpers.links.back")),
+  <%= link_to t('.back', :default => t("helpers.links.Atras")),
               p_trabajos_path, :class => 'btn'  %>
-  <%= link_to t('.edit', :default => t("helpers.links.edit")),
+  <%= link_to t('.edit', :default => t("helpers.links.Editar")),
               edit_p_trabajo_path(@p_trabajo), :class => 'btn' %>
-  <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+  <%= link_to t('.destroy', :default => t("helpers.links.Eliminar")),
               p_trabajo_path(@p_trabajo),
               :method => 'delete',
-              :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+              :data => { :confirm => t('.confirm', :default => t("helpers.links.confirmar", :default => 'Esta seguro de Eliminar Plan De Trabajo?')) },
               :class => 'btn btn-danger' %>
 </div>

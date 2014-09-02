@@ -1,5 +1,5 @@
 class PTrabajosController < ApplicationController
-  before_action :set_p_trabajo, only: [:show, :edit, :update, :destroy, :index, :new, :create]
+  before_action :set_p_trabajo
 
   # GET /p_trabajos
   # GET /p_trabajos.json
@@ -70,6 +70,6 @@ class PTrabajosController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def p_trabajo_params
-      params.require(:p_trabajo).permit(:nombrep_trabajo, :fechap_trabajo, :descriptionp_trabajo, :aprobado?, :observacion, :directiva_id)
+      params.require(:p_trabajo).permit(:nombrep_trabajo, :fechap_trabajo, :descriptionp_trabajo, :aprobado, :observacion, :directiva_id)
     end
 end

@@ -6,10 +6,10 @@
   <thead>
     <tr>
       <th><%= model_class.human_attribute_name(:id) %></th>
-      <th><%= model_class.human_attribute_name(:nombrep_trabajo) %></th>
-      <th><%= model_class.human_attribute_name(:fechap_trabajo) %></th>
-      <th><%= model_class.human_attribute_name(:descriptionp_trabajo) %></th>
-      <th><%= model_class.human_attribute_name(:aprobado?) %></th>
+      <th><%= model_class.human_attribute_name(:Nombre_de_Plan_De_trabajo) %></th>
+      <th><%= model_class.human_attribute_name(:fecha) %></th>
+      <th><%= model_class.human_attribute_name(:description) %></th>
+      <th><%= model_class.human_attribute_name(:aprobado) %></th>
       <th><%= model_class.human_attribute_name(:observacion) %></th>
       <th><%= model_class.human_attribute_name(:directiva_id) %></th>
       <th><%= model_class.human_attribute_name(:created_at) %></th>
@@ -23,17 +23,17 @@
         <td><%= p_trabajo.nombrep_trabajo %></td>
         <td><%= p_trabajo.fechap_trabajo %></td>
         <td><%= p_trabajo.descriptionp_trabajo %></td>
-        <td><%= p_trabajo.aprobado? %></td>
+        <td><%= p_trabajo.aprobado %></td>
         <td><%= p_trabajo.observacion %></td>
         <td><%= p_trabajo.directiva_id %></td>
         <td><%=l p_trabajo.created_at %></td>
         <td>
-          <%= link_to t('.edit', :default => t("helpers.links.edit")),
-                      edit_p_trabajo_path(p_trabajo), :class => 'btn btn-mini' %>
-          <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
-                      p_trabajo_path(p_trabajo),
+          <%= link_to t('.edit', :default => t("helpers.links.Editar")),
+                      edit_directiva_p_trabajo_path(@directiva,p_trabajo), :class => 'btn btn-mini' %>
+          <%= link_to t('.destroy', :default => t("helpers.links.Eliminar")),
+                      directiva_p_trabajo_path(@directiva,p_trabajo),
                       :method => :delete,
-                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirmar", :default => 'Esta seguro de Eliminar Plan De Trabajo?')) },
                       :class => 'btn btn-mini btn-danger' %>
         </td>
       </tr>
@@ -41,6 +41,10 @@
   </tbody>
 </table>
 
-<%= link_to t('.new', :default => t("helpers.links.new")),
-            new_p_trabajo_path,
+<%= link_to t('.new', :default => t("helpers.links.Nuevo")),
+            new_directiva_p_trabajo_path(@directiva),
             :class => 'btn btn-primary' %>
+
+            <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                directivas_path(@directiva), :class => 'btn' %>
+
