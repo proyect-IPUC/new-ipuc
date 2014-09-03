@@ -1,5 +1,6 @@
 class PTrabajosController < ApplicationController
-  before_action :set_p_trabajo
+  before_action :set_p_trabajo, only: [:show, :edit, :update, :destroy, :index, :new, :create]
+  load_and_authorize_resource
 
   # GET /p_trabajos
   # GET /p_trabajos.json
@@ -28,7 +29,7 @@ class PTrabajosController < ApplicationController
     @p_trabajo.directiva_id = @directiva.id
     respond_to do |format|
       if @p_trabajo.save
-        format.html { redirect_to directiva_p_trabajos_path(@directiva), notice: 'P trabajo was successfully created.' }
+        format.html { redirect_to directiva_p_trabajos_path(@directiva), notice: 'Plan de trabajo Creado Exitosamente.' }
         format.json { render :show, status: :created, location: @p_trabajo }
       else
         format.html { render :new }
@@ -42,7 +43,7 @@ class PTrabajosController < ApplicationController
   def update
     respond_to do |format|
       if @p_trabajo.update(p_trabajo_params)
-        format.html { redirect_to directiva_p_trabajos_path(@directiva), notice: 'P trabajo was successfully updated.' }
+        format.html { redirect_to directiva_p_trabajos_path(@directiva), notice: 'Plan de trabajo Modificado Exitosamente.' }
         format.json { render :show, status: :ok, location: @p_trabajo }
       else
         format.html { render :edit }
@@ -56,7 +57,7 @@ class PTrabajosController < ApplicationController
   def destroy
     @p_trabajo.destroy
     respond_to do |format|
-      format.html { redirect_to directiva_p_trabajos_url(@directiva), notice: 'P trabajo was successfully destroyed.' }
+      format.html { redirect_to directiva_p_trabajos_url(@directiva), notice: 'Plan de trabajo Eliminado Exitosamente.' }
       format.json { head :no_content }
     end
   end

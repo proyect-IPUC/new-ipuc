@@ -65,5 +65,7 @@ gem 'prawn_rails'
 
 gem 'paperclip'
 
+gem 'cancan'
+
 
 

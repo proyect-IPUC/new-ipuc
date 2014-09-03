@@ -1,5 +1,6 @@
 class DirectivasController < ApplicationController
   before_action :set_directiva, only: [:show, :edit, :update, :destroy]
+  load_and_authorize_resource
 
   # GET /directivas
   # GET /directivas.json
@@ -19,6 +20,8 @@ class DirectivasController < ApplicationController
 
   # GET /directivas/1/edit
   def edit
+    @directiva = Directiva.find(params[:id])
+     unauthorized! if cannot? :edit, @directiva
   end
 
   # POST /directivas

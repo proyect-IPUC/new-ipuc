@@ -1,24 +1,13 @@
-<%= simple_form_for(@user) do |f| %>
-  <%= f.error_notification %>
-
-  <div class="field">
-   	<%= f.label :email %><br />
-   	<%= f.text_field :email %>
-  </div>
-  <div class="field">
- 	<%= f.label :password %><br />
- 	<%= f.password_field :password %>
-  </div>
-  <div class="field">
- 	<%= f.label :password_confirmation %><br />
- 	<%= f.password_field :password_confirmation %>
-  </div>
-
+<%= simple_form_for @user, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :email %>
+  <%= f.input :password %>
+  <%= f.input :password_confirmation %>
+  <%= f.input :admin %>
+  <%= f.input :usuario %>
+  <%= f.input :invitado %>
   <div class="form-actions">
-    <%= f.button :submit %>
+    <%= f.button :submit, :class => 'btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                users_path, :class => 'btn' %>
   </div>
 <% end %>
-
-
-
-

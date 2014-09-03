@@ -24,9 +24,13 @@
   <dd><%= @membrecium.comentarios %></dd>
  
 </dl>
+
+<div id="imgs">
 <%= image_tag @membrecium.cover.url(:thumb)%>
+</div>
+
 <div class="form-actions">
   <%= link_to t('.back', :default => t("helpers.links.Atras")),
-              membrecia_path, :class => 'btn'  %>
+              membrecia_path, :class => 'btn'%>
   
 </div>

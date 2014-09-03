@@ -13,7 +13,7 @@
   <dt><strong><%= model_class.human_attribute_name(:aprobado) %>:</strong></dt>
   <dd><%= @p_trabajo.aprobado %></dd>
   <dt><strong><%= model_class.human_attribute_name(:observacion) %>:</strong></dt>
-  <dd><%= @p_trabajo.observacion %></dd>
+  <dd><%= aprobado(@p_trabajo.observacion) %></dd>
   <dt><strong><%= model_class.human_attribute_name(:directiva_id) %>:</strong></dt>
   <dd><%= @p_trabajo.directiva_id %></dd>
 </dl>

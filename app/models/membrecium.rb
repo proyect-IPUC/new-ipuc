@@ -6,6 +6,6 @@ has_many :modulos
 		where(['upper(nombre) like ?',
 			"%#{search}%".upcase]).paginate(page: page, per_page: 3).order("nombre")
 	end
-has_attached_file :cover, :styles  =>  {  :medium  =>  "300x300>" ,  :thumb  =>  "100x100>"  },  :default_url  =>  "/images/:style/foto.png"
+has_attached_file :cover, :styles  =>  {  :medium  =>  "600x600>" ,  :thumb  =>  "300x300>"  },  :default_url  =>  "/images/:style/foto.png"
 validates_attachment_content_type :cover, :content_type => ["image/jpg", "image/jpeg", "image/png", "image/gif"]
 end
