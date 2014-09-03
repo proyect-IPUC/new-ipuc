@@ -1,9 +1,0 @@
-<%= simple_form_for @directiva, :html => { :class => 'form-horizontal' } do |f| %>
-  <%= f.input :nombre %>
-  <%= f.input :descripcion %>
-  <div class="form-actions">
-    <%= f.button :submit, :class => 'btn-primary' %>
-    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
-                directivas_path, :class => 'btn' %>
-  </div>
-<% end %>

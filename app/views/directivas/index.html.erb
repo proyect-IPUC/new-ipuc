@@ -52,6 +52,8 @@
   </tbody>
 </table>
 
+<% if can? :create, @directiva %>
 <%= link_to t('.new', :default => t("helpers.links.nueva Directiva")),
             new_directiva_path,
             :class => 'btn btn-primary' %>
+<%end%>

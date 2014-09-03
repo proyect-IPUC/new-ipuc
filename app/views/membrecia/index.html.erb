@@ -57,6 +57,8 @@ Search term:
 <%= link_to t('.new', :default => t("helpers.links.Nuevo")),
             new_membrecium_path,
             :class => 'btn btn-primary' %>
+
+
 <%= will_paginate @membrecia, :previous_label => '&laquo; Anterior', :next_label => 'Siguiente &raquo;' %>
 <br>
 Membrecia: <%= @membrecia.count %>

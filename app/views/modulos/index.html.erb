@@ -34,13 +34,20 @@
         <td><%= modulo.cargo %></td>
         <td><%= modulo.directiva.nombre %></td>
         <td>
+
+        <% if can? :update, @modulo %>
           <%= link_to t('.edit', :default => t("helpers.links.Editar")),
                       edit_directiva_modulo_path(@directiva,modulo), :class => 'btn btn-mini' %>
+        <% end -%>
+
+        <% if can? :delete, @modulo %>
           <%= link_to t('.destroy', :default => t("helpers.links.Eliminar")),
                       directiva_modulo_path(@directiva,modulo),
                       :method => :delete,
                       :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Seguro de Eliminar?')) },
                       :class => 'btn btn-mini btn-danger' %>
+        <% end -%>
+
         </td>
 
       </tr>
@@ -48,6 +55,9 @@
   </tbody>
 </table>
 
+<% if can? :create, @modulo %>
 <%= link_to t('.new', :default => t("helpers.links.Nuevo Miembro")),
             new_directiva_modulo_path(@directiva),
             :class => 'btn btn-primary' %>
+
+<% end -%>
