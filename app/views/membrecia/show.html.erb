@@ -1,0 +1,36 @@
+<%- model_class = Membrecium -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.titleize %></h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt><strong><%= model_class.human_attribute_name(:nombre) %>:</strong></dt>
+  <dd><%= @membrecium.nombre %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:apellidos) %>:</strong></dt>
+  <dd><%= @membrecium.apellidos %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:telefono) %>:</strong></dt>
+  <dd><%= @membrecium.telefono %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:direccion) %>:</strong></dt>
+  <dd><%= @membrecium.direccion %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:email) %>:</strong></dt>
+  <dd><%= @membrecium.email %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:recibioEspiritu) %>:</strong></dt>
+  <dd><%= espiritu(@membrecium.recibioEspiritu) %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:fecha) %>:</strong></dt>
+  <dd><%= @membrecium.fecha %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:activo) %>:</strong></dt>
+  <dd><%= activo(@membrecium.activo) %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:comentarios) %>:</strong></dt>
+  <dd><%= @membrecium.comentarios %></dd>
+ 
+</dl>
+
+<div id="imgs">
+<%= image_tag @membrecium.cover.url(:thumb)%>
+</div>
+
+<div class="form-actions">
+  <%= link_to t('.back', :default => t("helpers.links.Atras")),
+              membrecia_path, :class => 'btn'%>
+  
+</div>

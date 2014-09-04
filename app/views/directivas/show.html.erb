@@ -1,0 +1,17 @@
+<%- model_class = Directiva -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.titleize %></h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt><strong><%= model_class.human_attribute_name(:nombre) %>:</strong></dt>
+  <dd><%= @directiva.nombre %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:descripcion) %>:</strong></dt>
+  <dd><%= @directiva.descripcion %></dd>
+</dl>
+
+<div class="form-actions">
+  <%= link_to t('.back', :default => t("helpers.links.back")),
+              directivas_path, :class => 'btn'  %>
+
+</div>

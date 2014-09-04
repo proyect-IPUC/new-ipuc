@@ -1,0 +1,12 @@
+<%= simple_form_for [@directiva,@p_trabajo], :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :nombrep_trabajo %>
+  <%= f.input :fechap_trabajo %>
+  <%= f.input :descriptionp_trabajo %>
+  <%= f.input :aprobado %>
+  <%= f.input :observacion %>
+  <div class="form-actions">
+    <%= f.button :submit, :class => 'btn-primary'%>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                directiva_p_trabajos_path(@directiva), :class => 'btn' %>
+  </div>
+<% end %>

@@ -1,0 +1,20 @@
+<%= simple_form_for @membrecium, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :nombre %>
+  <%= f.input :apellidos %>
+  <%= f.input :telefono %>
+  <%= f.input :direccion %>
+  <%= f.input :email %>
+  <%= f.input :activo %>
+  <%= f.input :recibioEspiritu %>
+  <%= f.input :fecha %>
+  <%= f.input :comentarios %>
+  <div class="field">
+    <%= f.label :cover %>
+    <%= f.file_field :cover %>
+  </div>
+  <div class="form-actions">
+    <%= f.button :submit, :class => 'btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                membrecia_path, :class => 'btn' %>
+  </div>
+<% end %>

@@ -1,0 +1,58 @@
+<%# add navigation links to this file %>
+    <div id='cssmenu'>
+
+<ul>
+
+
+   </li>
+   <li ><%= link_to "Directivas", directivas_path %>
+  
+   </li>
+   <li ><%= link_to "Membrecia", membrecia_path %>
+      
+   </li>
+
+   <li> <%= link_to "Canciones", cancions_path %></a>
+      
+   </li>
+
+    <li> <%= link_to "Biblia", biblia_path %>
+    
+   </li>
+
+    <li ><%= link_to "Tesoreria", controller: "pagina", action: "ofrenda" %>
+    </li>
+
+    <li ><%= link_to "Configuracion",users_path %></li>
+     <li ><%= link_to "Ayuda", controller: "paginaeg", action:"egresos" %></li>
+     
+</ul>
+
+<div id="img">
+      <img class="usu" src="assets/ipuc.jpg" >
+</div>
+
+</div>
+
+
+<!--Texto pie de pagina -->
+<div id="text">
+    <h6> BrYaN y SaLoMoN® </h6>
+    <h5> IPUC-Manrique Oriental </h5>
+</div>
+
+
+<!--Sesion y logueo en el menu -->
+<div id="sesion">
+<% if current_user %>
+      <%= link_to current_user.email, edit_user_path(current_user.id) %>
+      <br>
+      <br>
+      <%= button_to "Salir", :logout, method: :get %>
+ <% else %>
+      <%= link_to "Registrate", new_user_path %> |
+      <%= link_to "Entrar", :login %>
+<% end %>
+
+</div>
+

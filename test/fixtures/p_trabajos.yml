@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombrep_trabajo: MyString
+  fechap_trabajo: 2014-08-27
+  descriptionp_trabajo: MyText
+  aprobado?: false
+  observacion: MyText
+  directiva_id: 
+
+two:
+  nombrep_trabajo: MyString
+  fechap_trabajo: 2014-08-27
+  descriptionp_trabajo: MyText
+  aprobado?: false
+  observacion: MyText
+  directiva_id: 

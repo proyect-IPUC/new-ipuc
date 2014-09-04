@@ -1,0 +1,48 @@
+<br>
+<%- model_class = Cancion -%>
+<div class="todo">
+
+
+<div id="cont">
+        <%= form_tag cancions_path, :method => 'get' do %>
+        <% content_tag :label do %>
+        Search term:
+        <%= text_field_tag :search, params[:search] %>
+        <%= submit_tag "Buscar", :name => nil %>
+     <% end %>
+<% end %>
+</div>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th><%= model_class.human_attribute_name(:id) %></th>
+      <th><%= model_class.human_attribute_name(:cancion) %></th>
+      <th><%= model_class.human_attribute_name(:genero) %></th>
+      <th><%= model_class.human_attribute_name(:artista) %></th>
+      <th><%= model_class.human_attribute_name(:letra) %></th>
+      <th><%= model_class.human_attribute_name(:created_at) %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @cancions.each do |cancion| %>
+      <tr>
+        <td><%= link_to cancion.id %></td>
+        <td><%= cancion.cancion %></td>
+        <td><%= cancion.genero %></td>
+        <td><%= cancion.artista %></td>
+        <td><%= link_to t('.show', :default => t("helpers.links.Ver")),
+                      cancion_path(cancion), :class => 'btn btn-success' %></td>
+        <td><%=l cancion.created_at %></td>
+        
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to t('.new', :default => t("helpers.links.Nuevo")),
+            new_cancion_path,
+            :class => 'btn btn-primary' %>
+<%= will_paginate @cancions, :previous_label => '&laquo; Anterior', :next_label => 'Siguiente &raquo;' %>
+<br>
+Cancions: <%= @cancions.count %>
+</div>

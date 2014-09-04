@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  empresa: MyString
+  valor: 1
+  dia_de_pago: 2014-09-03
+
+two:
+  empresa: MyString
+  valor: 1
+  dia_de_pago: 2014-09-03

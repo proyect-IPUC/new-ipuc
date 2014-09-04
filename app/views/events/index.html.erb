@@ -1,0 +1,54 @@
+<br>
+<br>
+<br>
+<%= link_to 'Nuevo Evento', new_event_path %>
+<br>
+<br>
+<br>
+<script>
+		$(document).ready(function() {
+
+			var date = new Date();
+			var d = date.getDate();
+			var m = date.getMonth();
+			var y = date.getFullYear();
+
+			$('#calendar').fullCalendar({
+				header: {
+					left: 'prev,next today',
+					center: 'title',
+					right: 'month,agendaWeek,agendaDay'
+				},
+				editable: false,
+				    events: {
+						  url: '/events',
+						  type: 'GET',
+						  error: function() {
+						      alert('there was an error while fetching events!');
+						  },
+						  backgroundColor: 'blue',
+						  textColor: 'black'
+					}
+			});
+
+		});
+	</script>
+
+
+<div class="loading">
+  <div class="progress-bar progress-bar-success" style="width: 35%">
+    <span class="sr-only">35% Complete (Loading)</span>
+  </div>
+  <div class="progress-bar progress-bar-warning progress-bar-striped" style="width: 20%">
+    <span class="sr-only">20% Complete (Loading)</span>
+  </div>
+  <div class="progress-bar progress-bar-danger" style="width: 10%">
+    <span class="sr-only">10% Complete (Loading)</span>
+  </div>
+</div>
+
+<div id='calendar'></div>
+
+
+
+
