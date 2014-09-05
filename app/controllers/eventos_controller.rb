@@ -10,6 +10,7 @@ class EventosController < ApplicationController
   # GET /eventos/1
   # GET /eventos/1.json
   def show
+    @eventos = Eventos.find(params[:id])
   end
 
   # GET /eventos/new
@@ -19,36 +20,21 @@ class EventosController < ApplicationController
 
   # GET /eventos/1/edit
   def edit
+    @eventos = Evento.find(params[:id])
   end
 
   # POST /eventos
   # POST /eventos.json
   def create
     @evento = Evento.new(evento_params)
+    render action: :new unless @evento.save
 
-    respond_to do |format|
-      if @evento.save
-        format.html { redirect_to @evento, notice: 'Evento was successfully created.' }
-        format.json { render :show, status: :created, location: @evento }
-      else
-        format.html { render :new }
-        format.json { render json: @evento.errors, status: :unprocessable_entity }
-      end
-    end
   end
 
   # PATCH/PUT /eventos/1
   # PATCH/PUT /eventos/1.json
   def update
-    respond_to do |format|
-      if @evento.update(evento_params)
-        format.html { redirect_to @evento, notice: 'Evento was successfully updated.' }
-        format.json { render :show, status: :ok, location: @evento }
-      else
-        format.html { render :edit }
-        format.json { render json: @evento.errors, status: :unprocessable_entity }
-      end
-    end
+    render action: :edit unless @evento.update_attributes(evento_params)
   end
 
   # DELETE /eventos/1
