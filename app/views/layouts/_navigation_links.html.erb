@@ -1,64 +1,32 @@
 <%# add navigation links to this file %>
-    <div id='cssmenu'>
+<% if can? :read, Directiva %>
 
-<ul>
+     <li class="cont1"><%= link_to "Directivas", directivas_path %></li>
+     <li class="cont2"><%= link_to "Membrecia", membrecia_path %></li>
+     <li class="cont3"><%= link_to "Canciones", cancions_path %></li>
+     <li class="cont4"><%= link_to "Biblia", biblia_path %></li>
+  <!--Seguridad de usuario con cancan para tesoreria -->
+     <% if can? :read, User %>
+      <li class="cont5"><%= link_to "Tesoreria", root_path ,controller: "pagina" %>
+       <ul class="btn-info dropdown-menu">
+           <li> <%= link_to "Ofrendas", controller: "pagina", action: "ofrenda" %></li>
+           <li> <%= link_to "Diezmos", controller: "paginadi", action: "diezmo" %></li>
+           <li> <%= link_to "Ingresos", controller: "paginain", action: "ingresos" %></li>
+           <li> <%= link_to "Egresos", controller: "paginaeg", action: "egresos"%></li>
+      </ul>
+     </li>
+    <% end %>  <!--Seguridad de usuario con cancan para configuracion -->
+      <% if can? :read, User %>
+        <li class="cont6"><%= link_to "Configuracion",users_path %></li>
+      <% end %>
+      <li class="cont7"><%= link_to "Ayuda" %></li>
+  <% end %>
 
-
-   </li>
-   <li ><%= link_to "Directivas", directivas_path %>
+  <!--Texto pie de pagina -->
   
-   </li>
-   <li ><%= link_to "Membrecia", membrecia_path %>
-      
-   </li>
-
-   <li> <%= link_to "Canciones", cancions_path %></a>
-      
-   </li>
-
-    <li> <%= link_to "Biblia", biblia_path %>
-    
-   </li>
-
-    <li ><%= link_to "Tesoreria" %>
-     <ul>
-         <li> <%= link_to "Ofrendas", controller: "pagina", action: "ofrenda" %></li>
-         <li> <%= link_to "Diezmos", controller: "paginadi", action: "diezmo" %></li>
-         <li> <%= link_to "Ingresos", controller: "paginain", action: "ingresos" %></li>
-         <li> <%= link_to "Egresos", controller: "paginaeg", action: "egresos"%></li>
-    </ul>
-   </li>
-
-    <li ><%= link_to "Configuracion",users_path %></li>
-     <li ><%= link_to "Ayuda" %></li>
-     
-</ul>
-
-<div id="img">
-      <img class="usu" src="assets/ipuc.jpg" >
+  <div id="text">
+      <h6> BrYaN y SaLoMoN® </h6>
+      <h5> IPUC-Manrique Oriental </h5>
+  </div>
+  
 </div>
-
-</div>
-
-
-<!--Texto pie de pagina -->
-<div id="text">
-    <h6> BrYaN y SaLoMoN® </h6>
-    <h5> IPUC-Manrique Oriental </h5>
-</div>
-
-
-<!--Sesion y logueo en el menu -->
-<div id="sesion">
-<% if current_user %>
-      <%= link_to current_user.email, edit_user_path(current_user.id) %>
-      <br>
-      <br>
-      <%= button_to "Salir", :logout, method: :get %>
- <% else %>
-      <%= link_to "Registrate", new_user_path %> |
-      <%= link_to "Entrar", :login %>
-<% end %>
-
-</div>
-

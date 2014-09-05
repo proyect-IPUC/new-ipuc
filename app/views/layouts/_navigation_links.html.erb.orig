@@ -27,12 +27,11 @@
    </li>
 
    <li> <%= link_to "Canciones", cancions_path %></a>
-<<<<<<< HEAD
-=======
+
       <ul>
          <li> <%= link_to "Buscar", cancions_path %></li>
       </ul>
->>>>>>> f0553bd5aae2c47e861bb097048fd36c0e7321a4
+
    </li>
 
     <li> <%= link_to "Biblia", biblia_path %>
@@ -48,20 +47,16 @@
     </ul>
    </li>
 
-<<<<<<< HEAD
+
     <li ><%= link_to "Configuracion"  %></li>
      <li ><%= link_to "Ayuda" %></li>
-=======
     <li ><%= link_to "Configuracion", cancions_path %></li>
      <li ><%= link_to "Ayuda", cancions_path %></li>
->>>>>>> f0553bd5aae2c47e861bb097048fd36c0e7321a4
+
 </ul>
 
 </div>
 
-<div id="img">
-      <img class="usu" src="assets/ipuc.jpg">
-</div>
 
 <div id="text">
     <h6> BrYaN y SaLoMoN® </h6>
