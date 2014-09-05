@@ -1,6 +1,9 @@
 <%- model_class = Modulo -%>
+
 <div class="page-header">
-  <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
+<br>
+<br>
+  <center><h1><td><%=@directiva.nombre%></td></h1></center>
 
 
   <!--eventos de las directivas boton--> 
@@ -9,6 +12,8 @@
 <td><%= link_to t('.show', :default => t("helpers.links.Ver Eventos")),
                       events_path(@events), :class => 'btn btn-success btn-lg dropdown-toggle' %></td>
 </div>
+<br>
+<br>
 
 
 <!--tabla donde estan los miembros de las directivas con su respectivo cargo--> 
@@ -28,11 +33,8 @@
     <% @modulos.each do |modulo| %>
       <tr>
         <td><%= link_to modulo.id  %></td>
-<<<<<<< HEAD
         <td><%= modulo.membrecium.nombre rescue nil%></td>
-=======
         <td><%= modulo.membrecium.nombre%></td>
->>>>>>> 70bf2735cdb0584648dd8fce09769173ac26486f
         <td><%= link_to t('.show', :default => t("helpers.links.Ver")),
                       membrecium_path(modulo.membrecium), :class => 'btn btn-success' %></td>
         <td><%= modulo.cargo %></td>

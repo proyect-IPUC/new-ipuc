@@ -2,7 +2,7 @@
 <br>
 <%- model_class = Directiva -%>
 <div class="page-header">
-  <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
+  <center><h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1></center>
 </div>
 <table class="table table-striped">
   <thead>
@@ -29,21 +29,21 @@
         <td><%=l directiva.created_at %></td>
         <td>
           
-          <% if can? :update, @directiva %>
+          <% if can? :update, directiva %>
           <td><%= link_to t('.edit', :default => t("helpers.links.Editar")),
                       edit_directiva_path(directiva), :class => 'btn btn-success' %></td>
           <%end%>
           
-          <% if can? :delete, @directiva %>
+          <% if can? :destroy, directiva %>
           <td><%= link_to t('.destroy', :default => t("helpers.links.Eliminar")),
                       directiva_path(directiva),
                       :method => :delete,
                       :data => { :confirm => t('.confirm', :default => t("helpers.links.confirmar", :default => 'Esta Seguro de Eliminar Directiva?')) },
                       :class => 'btn btn-mini btn-danger' %><td>
-
+              
           <%end%>
-
           <%= link_to 'Plan De Trabajo', directiva_p_trabajos_path(directiva), :class => 'btn btn-info' %>
+          
         </td>
 
     

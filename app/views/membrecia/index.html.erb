@@ -40,7 +40,7 @@ Search term:
                       edit_membrecium_path(membrecium), :class => 'btn btn-mini' %>
         <% end -%>
 
-        <% if can? :delete, @membrecium %>
+        <% if can? :destroy, @membrecium %>
           <%= link_to t('.destroy', :default => t("helpers.links.Eliminar")),
                       membrecium_path(membrecium),
                       :method => :delete,

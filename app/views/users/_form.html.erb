@@ -1,10 +1,23 @@
 <%= simple_form_for @user, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :nombre %>
+  <%= f.input :apellido %>
+  <%= f.input :fcha_ncto %>
   <%= f.input :email %>
   <%= f.input :password %>
   <%= f.input :password_confirmation %>
+
+  <% if can? :read,@user%>
   <%= f.input :admin %>
-  <%= f.input :usuario %>
-  <%= f.input :invitado %>
+
+  <%= f.input :usuario%>
+ <% else %>
+ <div class="field ocultar">
+  <%= f.input :usuario, {:checked=>true}%>
+  </div>
+ <% end %>
+
+
+
   <div class="form-actions">
     <%= f.button :submit, :class => 'btn-primary' %>
     <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
