@@ -28,7 +28,11 @@
     <% @modulos.each do |modulo| %>
       <tr>
         <td><%= link_to modulo.id  %></td>
+<<<<<<< HEAD
         <td><%= modulo.membrecium.nombre rescue nil%></td>
+=======
+        <td><%= modulo.membrecium.nombre%></td>
+>>>>>>> 70bf2735cdb0584648dd8fce09769173ac26486f
         <td><%= link_to t('.show', :default => t("helpers.links.Ver")),
                       membrecium_path(modulo.membrecium), :class => 'btn btn-success' %></td>
         <td><%= modulo.cargo %></td>

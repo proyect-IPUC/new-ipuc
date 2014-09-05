@@ -211,4 +211,6 @@ edit_directiva_p_trabajo GET    /directivas/:directiva_id/p_trabajos/:id/edit(.:
                          PUT    /membrecia/:id(.:format)                                membrecia#update
                          DELETE /membrecia/:id(.:format)                                membrecia#destroy
                     root GET    /                                                       cancions#index
+
      totalofrendasemanal GET    /totalofrendasemanal(.:format)                          ofrendasems#insert_ofrendasems
+
