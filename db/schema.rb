@@ -47,6 +47,7 @@ ActiveRecord::Schema.define(version: 20140901143510) do
     t.boolean  "recibioEspiritu"
     t.date     "fecha"
     t.text     "comentarios"
+    t.boolean  "activo"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "cover_file_name"
@@ -58,16 +59,18 @@ ActiveRecord::Schema.define(version: 20140901143510) do
   create_table "modulos", force: true do |t|
     t.integer  "membrecium_id"
     t.string   "cargo"
-    t.integer  "directiva_id"
+    t.integer  "directivas_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "modulos", ["directivas_id"], name: "index_modulos_on_directivas_id"
 
   create_table "p_trabajos", force: true do |t|
     t.string   "nombrep_trabajo"
     t.date     "fechap_trabajo"
     t.text     "descriptionp_trabajo"
-    t.boolean  "aprobado?"
+    t.boolean  "aprobado"
     t.text     "observacion"
     t.integer  "directiva_id"
     t.datetime "created_at"
@@ -101,9 +104,14 @@ ActiveRecord::Schema.define(version: 20140901143510) do
   end
 
   create_table "users", force: true do |t|
+    t.string   "nombre"
+    t.string   "apellido"
+    t.date     "fcha_ncto"
     t.string   "email",            null: false
     t.string   "crypted_password", null: false
     t.string   "salt",             null: false
+    t.boolean  "admin"
+    t.boolean  "usuario"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
