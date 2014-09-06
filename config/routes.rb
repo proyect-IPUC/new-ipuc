@@ -1,4 +1,28 @@
 Rails.application.routes.draw do
+
+  resources :ofrendasems
+
+  resources :servicios
+
+  resources :otrosings
+
+  resources :eventos
+
+  resources :diezmoanuals
+
+  resources :diezmotris
+
+  resources :diezmosems
+
+  resources :diezmodia
+
+  resources :ofrendanuals
+
+  resources :ofrendatris
+
+  resources :ofrendadia
+
+
   resources :user_sessions
   resources :users
 
@@ -54,6 +78,9 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'cancions#index'
+
+
+  get 'totalofrendasemanal', to: "ofrendasems#insert_ofrendasems", as: 'totalofrendasemanal'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140901143510) do
+ActiveRecord::Schema.define(version: 20140904160953) do
 
   create_table "cancions", force: true do |t|
     t.string   "cancion"
@@ -22,9 +22,38 @@ ActiveRecord::Schema.define(version: 20140901143510) do
     t.datetime "updated_at"
   end
 
+  create_table "diezmoanuals", force: true do |t|
+    t.integer  "valor"
+    t.date     "año"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "diezmodia", force: true do |t|
+    t.integer  "valor"
+    t.date     "dia"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "diezmotris", force: true do |t|
+    t.integer  "valor"
+    t.date     "trimestre"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "directivas", force: true do |t|
     t.string   "nombre"
     t.text     "descripcion"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "eventos", force: true do |t|
+    t.string   "evento"
+    t.integer  "valor"
+    t.date     "dia"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -66,6 +95,42 @@ ActiveRecord::Schema.define(version: 20140901143510) do
 
   add_index "modulos", ["directivas_id"], name: "index_modulos_on_directivas_id"
 
+  create_table "ofrendadia", force: true do |t|
+    t.integer  "valor"
+    t.date     "dia"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "ofrendanuals", force: true do |t|
+    t.integer  "valor"
+    t.date     "año"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "ofrendasems", force: true do |t|
+    t.integer  "valor"
+    t.date     "dia"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "ofrendatris", force: true do |t|
+    t.integer  "valor"
+    t.date     "trimestre"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "otrosings", force: true do |t|
+    t.string   "actividad"
+    t.integer  "valor"
+    t.date     "dia"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "p_trabajos", force: true do |t|
     t.string   "nombrep_trabajo"
     t.date     "fechap_trabajo"
@@ -99,6 +164,14 @@ ActiveRecord::Schema.define(version: 20140901143510) do
 
   create_table "paginas", force: true do |t|
     t.string   "ofrenda"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "servicios", force: true do |t|
+    t.string   "empresa"
+    t.integer  "valor"
+    t.date     "dia_de_pago"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

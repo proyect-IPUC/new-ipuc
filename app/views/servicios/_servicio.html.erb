@@ -1,0 +1,16 @@
+<tr id=<%="servicio_#{servicio.id}"%>>
+        <td><%= link_to servicio.id, servicio_path(servicio) %></td>
+        <td><%= servicio.empresa %></td>
+        <td><%= servicio.valor %></td>
+        <td><%= servicio.dia_de_pago %></td>
+        <td><%=l servicio.created_at %></td>
+        <td>
+          <%= link_to t('.edit', :default => t("helpers.links.edit")),
+                      edit_servicio_path(servicio), remote: true, :class => 'btn btn-mini' %>
+          <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                      servicio_path(servicio),
+                      :method => :delete,
+                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                      :class => 'btn btn-mini btn-danger' %>
+        </td>
+      </tr>

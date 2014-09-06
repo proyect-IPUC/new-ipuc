@@ -1,4 +1,92 @@
                   Prefix Verb   URI Pattern                                             Controller#Action
+             ofrendasems GET    /ofrendasems(.:format)                                  ofrendasems#index
+                         POST   /ofrendasems(.:format)                                  ofrendasems#create
+          new_ofrendasem GET    /ofrendasems/new(.:format)                              ofrendasems#new
+         edit_ofrendasem GET    /ofrendasems/:id/edit(.:format)                         ofrendasems#edit
+              ofrendasem GET    /ofrendasems/:id(.:format)                              ofrendasems#show
+                         PATCH  /ofrendasems/:id(.:format)                              ofrendasems#update
+                         PUT    /ofrendasems/:id(.:format)                              ofrendasems#update
+                         DELETE /ofrendasems/:id(.:format)                              ofrendasems#destroy
+               servicios GET    /servicios(.:format)                                    servicios#index
+                         POST   /servicios(.:format)                                    servicios#create
+            new_servicio GET    /servicios/new(.:format)                                servicios#new
+           edit_servicio GET    /servicios/:id/edit(.:format)                           servicios#edit
+                servicio GET    /servicios/:id(.:format)                                servicios#show
+                         PATCH  /servicios/:id(.:format)                                servicios#update
+                         PUT    /servicios/:id(.:format)                                servicios#update
+                         DELETE /servicios/:id(.:format)                                servicios#destroy
+               otrosings GET    /otrosings(.:format)                                    otrosings#index
+                         POST   /otrosings(.:format)                                    otrosings#create
+            new_otrosing GET    /otrosings/new(.:format)                                otrosings#new
+           edit_otrosing GET    /otrosings/:id/edit(.:format)                           otrosings#edit
+                otrosing GET    /otrosings/:id(.:format)                                otrosings#show
+                         PATCH  /otrosings/:id(.:format)                                otrosings#update
+                         PUT    /otrosings/:id(.:format)                                otrosings#update
+                         DELETE /otrosings/:id(.:format)                                otrosings#destroy
+                 eventos GET    /eventos(.:format)                                      eventos#index
+                         POST   /eventos(.:format)                                      eventos#create
+              new_evento GET    /eventos/new(.:format)                                  eventos#new
+             edit_evento GET    /eventos/:id/edit(.:format)                             eventos#edit
+                  evento GET    /eventos/:id(.:format)                                  eventos#show
+                         PATCH  /eventos/:id(.:format)                                  eventos#update
+                         PUT    /eventos/:id(.:format)                                  eventos#update
+                         DELETE /eventos/:id(.:format)                                  eventos#destroy
+            diezmoanuals GET    /diezmoanuals(.:format)                                 diezmoanuals#index
+                         POST   /diezmoanuals(.:format)                                 diezmoanuals#create
+         new_diezmoanual GET    /diezmoanuals/new(.:format)                             diezmoanuals#new
+        edit_diezmoanual GET    /diezmoanuals/:id/edit(.:format)                        diezmoanuals#edit
+             diezmoanual GET    /diezmoanuals/:id(.:format)                             diezmoanuals#show
+                         PATCH  /diezmoanuals/:id(.:format)                             diezmoanuals#update
+                         PUT    /diezmoanuals/:id(.:format)                             diezmoanuals#update
+                         DELETE /diezmoanuals/:id(.:format)                             diezmoanuals#destroy
+              diezmotris GET    /diezmotris(.:format)                                   diezmotris#index
+                         POST   /diezmotris(.:format)                                   diezmotris#create
+           new_diezmotri GET    /diezmotris/new(.:format)                               diezmotris#new
+          edit_diezmotri GET    /diezmotris/:id/edit(.:format)                          diezmotris#edit
+               diezmotri GET    /diezmotris/:id(.:format)                               diezmotris#show
+                         PATCH  /diezmotris/:id(.:format)                               diezmotris#update
+                         PUT    /diezmotris/:id(.:format)                               diezmotris#update
+                         DELETE /diezmotris/:id(.:format)                               diezmotris#destroy
+              diezmosems GET    /diezmosems(.:format)                                   diezmosems#index
+                         POST   /diezmosems(.:format)                                   diezmosems#create
+           new_diezmosem GET    /diezmosems/new(.:format)                               diezmosems#new
+          edit_diezmosem GET    /diezmosems/:id/edit(.:format)                          diezmosems#edit
+               diezmosem GET    /diezmosems/:id(.:format)                               diezmosems#show
+                         PATCH  /diezmosems/:id(.:format)                               diezmosems#update
+                         PUT    /diezmosems/:id(.:format)                               diezmosems#update
+                         DELETE /diezmosems/:id(.:format)                               diezmosems#destroy
+               diezmodia GET    /diezmodia(.:format)                                    diezmodia#index
+                         POST   /diezmodia(.:format)                                    diezmodia#create
+          new_diezmodium GET    /diezmodia/new(.:format)                                diezmodia#new
+         edit_diezmodium GET    /diezmodia/:id/edit(.:format)                           diezmodia#edit
+              diezmodium GET    /diezmodia/:id(.:format)                                diezmodia#show
+                         PATCH  /diezmodia/:id(.:format)                                diezmodia#update
+                         PUT    /diezmodia/:id(.:format)                                diezmodia#update
+                         DELETE /diezmodia/:id(.:format)                                diezmodia#destroy
+            ofrendanuals GET    /ofrendanuals(.:format)                                 ofrendanuals#index
+                         POST   /ofrendanuals(.:format)                                 ofrendanuals#create
+         new_ofrendanual GET    /ofrendanuals/new(.:format)                             ofrendanuals#new
+        edit_ofrendanual GET    /ofrendanuals/:id/edit(.:format)                        ofrendanuals#edit
+             ofrendanual GET    /ofrendanuals/:id(.:format)                             ofrendanuals#show
+                         PATCH  /ofrendanuals/:id(.:format)                             ofrendanuals#update
+                         PUT    /ofrendanuals/:id(.:format)                             ofrendanuals#update
+                         DELETE /ofrendanuals/:id(.:format)                             ofrendanuals#destroy
+             ofrendatris GET    /ofrendatris(.:format)                                  ofrendatris#index
+                         POST   /ofrendatris(.:format)                                  ofrendatris#create
+          new_ofrendatri GET    /ofrendatris/new(.:format)                              ofrendatris#new
+         edit_ofrendatri GET    /ofrendatris/:id/edit(.:format)                         ofrendatris#edit
+              ofrendatri GET    /ofrendatris/:id(.:format)                              ofrendatris#show
+                         PATCH  /ofrendatris/:id(.:format)                              ofrendatris#update
+                         PUT    /ofrendatris/:id(.:format)                              ofrendatris#update
+                         DELETE /ofrendatris/:id(.:format)                              ofrendatris#destroy
+              ofrendadia GET    /ofrendadia(.:format)                                   ofrendadia#index
+                         POST   /ofrendadia(.:format)                                   ofrendadia#create
+         new_ofrendadium GET    /ofrendadia/new(.:format)                               ofrendadia#new
+        edit_ofrendadium GET    /ofrendadia/:id/edit(.:format)                          ofrendadia#edit
+             ofrendadium GET    /ofrendadia/:id(.:format)                               ofrendadia#show
+                         PATCH  /ofrendadia/:id(.:format)                               ofrendadia#update
+                         PUT    /ofrendadia/:id(.:format)                               ofrendadia#update
+                         DELETE /ofrendadia/:id(.:format)                               ofrendadia#destroy
            user_sessions GET    /user_sessions(.:format)                                user_sessions#index
                          POST   /user_sessions(.:format)                                user_sessions#create
         new_user_session GET    /user_sessions/new(.:format)                            user_sessions#new
@@ -123,3 +211,6 @@ edit_directiva_p_trabajo GET    /directivas/:directiva_id/p_trabajos/:id/edit(.:
                          PUT    /membrecia/:id(.:format)                                membrecia#update
                          DELETE /membrecia/:id(.:format)                                membrecia#destroy
                     root GET    /                                                       cancions#index
+
+     totalofrendasemanal GET    /totalofrendasemanal(.:format)                          ofrendasems#insert_ofrendasems
+
