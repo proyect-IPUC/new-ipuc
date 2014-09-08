@@ -14,7 +14,7 @@
 
 <div class="form-actions">
   <%= link_to t('.back', :default => t("helpers.links.back")),
-              eventos_path, :class => 'btn'  %>
+              eventos_path, remote:true, :class => 'btn'  %>
   <%= link_to t('.edit', :default => t("helpers.links.edit")),
               edit_evento_path(@evento), :class => 'btn' %>
   <%= link_to t('.destroy', :default => t("helpers.links.destroy")),

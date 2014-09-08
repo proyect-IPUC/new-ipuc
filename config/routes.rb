@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :diezmosems
+
   resources :ofrendasems
 
   resources :servicios
@@ -11,8 +13,6 @@ Rails.application.routes.draw do
   resources :diezmoanuals
 
   resources :diezmotris
-
-  resources :diezmosems
 
   resources :diezmodia
 

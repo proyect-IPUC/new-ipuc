@@ -10,6 +10,7 @@ class OfrendanualsController < ApplicationController
   # GET /ofrendanuals/1
   # GET /ofrendanuals/1.json
   def show
+    @ofrendanuals = Ofrendanual.find(params[:id])
   end
 
   # GET /ofrendanuals/new
@@ -19,36 +20,20 @@ class OfrendanualsController < ApplicationController
 
   # GET /ofrendanuals/1/edit
   def edit
+    @ofrendanuals = Ofrendanual.find(params[:id])
   end
 
   # POST /ofrendanuals
   # POST /ofrendanuals.json
   def create
     @ofrendanual = Ofrendanual.new(ofrendanual_params)
-
-    respond_to do |format|
-      if @ofrendanual.save
-        format.html { redirect_to @ofrendanual, notice: 'Ofrendanual was successfully created.' }
-        format.json { render :show, status: :created, location: @ofrendanual }
-      else
-        format.html { render :new }
-        format.json { render json: @ofrendanual.errors, status: :unprocessable_entity }
-      end
-    end
+    render action: :new unless @ofrendanual.save
   end
 
   # PATCH/PUT /ofrendanuals/1
   # PATCH/PUT /ofrendanuals/1.json
   def update
-    respond_to do |format|
-      if @ofrendanual.update(ofrendanual_params)
-        format.html { redirect_to @ofrendanual, notice: 'Ofrendanual was successfully updated.' }
-        format.json { render :show, status: :ok, location: @ofrendanual }
-      else
-        format.html { render :edit }
-        format.json { render json: @ofrendanual.errors, status: :unprocessable_entity }
-      end
-    end
+   render action: :edit unless @ofrendanual.update_attributes(ofrendanual_params)
   end
 
   # DELETE /ofrendanuals/1

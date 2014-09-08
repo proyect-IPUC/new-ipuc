@@ -1,4 +1,5 @@
 <%- model_class = Diezmoanual -%>
+<div class="diezmoanual">
 <div class="page-header">
   <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
 </div>
@@ -13,28 +14,12 @@
     </tr>
   </thead>
   <tbody>
-    <% @diezmoanuals.each do |diezmoanual| %>
-      <tr>
-        <td><%= link_to diezmoanual.id, diezmoanual_path(diezmoanual) %></td>
-        <td><%= diezmoanual.valor %></td>
-        <td><%= diezmoanual.año %></td>
-        <td><%=l diezmoanual.created_at %></td>
-        <td>
-          <%= link_to t('.edit', :default => t("helpers.links.edit")),
-                      edit_diezmoanual_path(diezmoanual), :class => 'btn btn-mini' %>
-          <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
-                      diezmoanual_path(diezmoanual),
-                      :method => :delete,
-                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
-                      :class => 'btn btn-mini btn-danger' %>
-        </td>
-      </tr>
-    <% end %>
+      <%= render @diezmoanuals %>
   </tbody>
 </table>
 
 <%= link_to t('.new', :default => t("helpers.links.new")),
-            new_diezmoanual_path,
+            new_diezmoanual_path, remote: true,
             :class => 'btn btn-primary' %>
 
 

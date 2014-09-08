@@ -10,6 +10,7 @@ class DiezmotrisController < ApplicationController
   # GET /diezmotris/1
   # GET /diezmotris/1.json
   def show
+        @diezmotris = Diezmotri.find(params[:id])
   end
 
   # GET /diezmotris/new
@@ -19,36 +20,20 @@ class DiezmotrisController < ApplicationController
 
   # GET /diezmotris/1/edit
   def edit
+        @diezmotris = Diezmotri.find(params[:id])
   end
 
   # POST /diezmotris
   # POST /diezmotris.json
   def create
     @diezmotri = Diezmotri.new(diezmotri_params)
-
-    respond_to do |format|
-      if @diezmotri.save
-        format.html { redirect_to @diezmotri, notice: 'Diezmotri was successfully created.' }
-        format.json { render :show, status: :created, location: @diezmotri }
-      else
-        format.html { render :new }
-        format.json { render json: @diezmotri.errors, status: :unprocessable_entity }
-      end
-    end
+    render action: :new unless @diezmotri.save
   end
 
   # PATCH/PUT /diezmotris/1
   # PATCH/PUT /diezmotris/1.json
   def update
-    respond_to do |format|
-      if @diezmotri.update(diezmotri_params)
-        format.html { redirect_to @diezmotri, notice: 'Diezmotri was successfully updated.' }
-        format.json { render :show, status: :ok, location: @diezmotri }
-      else
-        format.html { render :edit }
-        format.json { render json: @diezmotri.errors, status: :unprocessable_entity }
-      end
-    end
+           render action: :edit unless @diezmotri.update_attributes(diezmotri_params)
   end
 
   # DELETE /diezmotris/1

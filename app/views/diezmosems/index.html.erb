@@ -13,30 +13,10 @@
     </tr>
   </thead>
   <tbody>
-    <% @diezmosems.each do |diezmosem| %>
-      <tr>
-        <td><%= link_to diezmosem.id, diezmosem_path(diezmosem) %></td>
-        <td><%= diezmosem.valor %></td>
-        <td><%= diezmosem.semana %></td>
-        <td><%=l diezmosem.created_at %></td>
-        <td>
-          <%= link_to t('.edit', :default => t("helpers.links.edit")),
-                      edit_diezmosem_path(diezmosem), :class => 'btn btn-mini' %>
-          <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
-                      diezmosem_path(diezmosem),
-                      :method => :delete,
-                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
-                      :class => 'btn btn-mini btn-danger' %>
-        </td>
-      </tr>
-    <% end %>
+    <%= render @diezmosems %>
   </tbody>
 </table>
 
 <%= link_to t('.new', :default => t("helpers.links.new")),
             new_diezmosem_path,
-            :class => 'btn btn-primary' %>
-
-<br>
-
-Valor Recaudado :<%= Diezmosem.sum(:valor) %>
+            :class => 'btn btn-primary', remote: true %>

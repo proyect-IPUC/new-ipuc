@@ -7,6 +7,7 @@ class OfrendasemsController < ApplicationController
   end
 
   def show
+    @ofrendasems = Ofrendasem.find(params[:id])
   end
 
   def new
@@ -14,31 +15,16 @@ class OfrendasemsController < ApplicationController
   end
 
   def edit
+    @ofrendasems = Ofrendasem.find(params[:id])
   end
 
   def create
     @ofrendasem = Ofrendasem.new(ofrendasem_params)
-    respond_to do |format|
-      if @ofrendasem.save
-        format.html { redirect_to @ofrendasem, notice: 'Ofrendasem was successfully created.' }
-        format.json { render :show, status: :created, location: @ofrendasem }
-      else
-        format.html { render :new }
-        format.json { render json: @ofrendasem.errors, status: :unprocessable_entity }
-      end
-    end
+    render action: :new unless @ofrendasem.save
   end
 
   def update
-    respond_to do |format|
-      if @ofrendasem.update(ofrendasem_params)
-        format.html { redirect_to @ofrendasem, notice: 'Ofrendasem was successfully updated.' }
-        format.json { render :show, status: :ok, location: @ofrendasem }
-      else
-        format.html { render :edit }
-        format.json { render json: @ofrendasem.errors, status: :unprocessable_entity }
-      end
-    end
+   render action: :edit unless @ofrendasem.update_attributes(ofrendasem_params)
   end
 
   def destroy

@@ -10,6 +10,7 @@ class OtrosingsController < ApplicationController
   # GET /otrosings/1
   # GET /otrosings/1.json
   def show
+      @otrosings = Otrosing.find(params[:id])
   end
 
   # GET /otrosings/new
@@ -19,36 +20,20 @@ class OtrosingsController < ApplicationController
 
   # GET /otrosings/1/edit
   def edit
+     @otrosings = Otrosing.find(params[:id])
   end
 
   # POST /otrosings
   # POST /otrosings.json
   def create
     @otrosing = Otrosing.new(otrosing_params)
-
-    respond_to do |format|
-      if @otrosing.save
-        format.html { redirect_to @otrosing, notice: 'Otrosing was successfully created.' }
-        format.json { render :show, status: :created, location: @otrosing }
-      else
-        format.html { render :new }
-        format.json { render json: @otrosing.errors, status: :unprocessable_entity }
-      end
-    end
+    render action: :new unless @otrosing.save
   end
 
   # PATCH/PUT /otrosings/1
   # PATCH/PUT /otrosings/1.json
   def update
-    respond_to do |format|
-      if @otrosing.update(otrosing_params)
-        format.html { redirect_to @otrosing, notice: 'Otrosing was successfully updated.' }
-        format.json { render :show, status: :ok, location: @otrosing }
-      else
-        format.html { render :edit }
-        format.json { render json: @otrosing.errors, status: :unprocessable_entity }
-      end
-    end
+    render action: :edit unless @otrosing.update_attributes(otrosing_params)
   end
 
   # DELETE /otrosings/1

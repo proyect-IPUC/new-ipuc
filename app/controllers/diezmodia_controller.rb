@@ -4,12 +4,13 @@ class DiezmodiaController < ApplicationController
   # GET /diezmodia
   # GET /diezmodia.json
   def index
-    @diezmodia = Diezmodium.all
+    @diezmodium = Diezmodium.all
   end
 
   # GET /diezmodia/1
   # GET /diezmodia/1.json
   def show
+    @diezmodium = Diezmodium.find(params[:id])
   end
 
   # GET /diezmodia/new
@@ -19,36 +20,20 @@ class DiezmodiaController < ApplicationController
 
   # GET /diezmodia/1/edit
   def edit
+    @diezmodium = Diezmodium.find(params[:id])
   end
 
   # POST /diezmodia
   # POST /diezmodia.json
   def create
     @diezmodium = Diezmodium.new(diezmodium_params)
-
-    respond_to do |format|
-      if @diezmodium.save
-        format.html { redirect_to @diezmodium, notice: 'Diezmodium was successfully created.' }
-        format.json { render :show, status: :created, location: @diezmodium }
-      else
-        format.html { render :new }
-        format.json { render json: @diezmodium.errors, status: :unprocessable_entity }
-      end
-    end
+    render action: :new unless @diezmodium.save
   end
 
   # PATCH/PUT /diezmodia/1
   # PATCH/PUT /diezmodia/1.json
   def update
-    respond_to do |format|
-      if @diezmodium.update(diezmodium_params)
-        format.html { redirect_to @diezmodium, notice: 'Diezmodium was successfully updated.' }
-        format.json { render :show, status: :ok, location: @diezmodium }
-      else
-        format.html { render :edit }
-        format.json { render json: @diezmodium.errors, status: :unprocessable_entity }
-      end
-    end
+    render action: :edit unless @diezmodium.update_attributes(diezmodium_params)
   end
 
   # DELETE /diezmodia/1

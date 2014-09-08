@@ -1,4 +1,5 @@
 <%- model_class = Diezmotri -%>
+<div class="diezmotri">
 <div class="page-header">
   <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
 </div>
@@ -13,29 +14,13 @@
     </tr>
   </thead>
   <tbody>
-    <% @diezmotris.each do |diezmotri| %>
-      <tr>
-        <td><%= link_to diezmotri.id, diezmotri_path(diezmotri) %></td>
-        <td><%= diezmotri.valor %></td>
-        <td><%= diezmotri.trimestre %></td>
-        <td><%=l diezmotri.created_at %></td>
-        <td>
-          <%= link_to t('.edit', :default => t("helpers.links.edit")),
-                      edit_diezmotri_path(diezmotri), :class => 'btn btn-mini' %>
-          <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
-                      diezmotri_path(diezmotri),
-                      :method => :delete,
-                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
-                      :class => 'btn btn-mini btn-danger' %>
-        </td>
-      </tr>
-    <% end %>
+      <%= render @diezmotris %>
   </tbody>
 </table>
 
 <%= link_to t('.new', :default => t("helpers.links.new")),
             new_diezmotri_path,
-            :class => 'btn btn-primary' %>
+            :class => 'btn btn-primary',  remote: true %>
 
 <br>
 

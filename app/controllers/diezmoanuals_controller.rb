@@ -10,6 +10,7 @@ class DiezmoanualsController < ApplicationController
   # GET /diezmoanuals/1
   # GET /diezmoanuals/1.json
   def show
+    @diezmoanuals = Diezmoanual.find(params[:id])
   end
 
   # GET /diezmoanuals/new
@@ -19,36 +20,20 @@ class DiezmoanualsController < ApplicationController
 
   # GET /diezmoanuals/1/edit
   def edit
+    @diezmoanuals = Diezmoanual.find(params[:id])
   end
 
   # POST /diezmoanuals
   # POST /diezmoanuals.json
   def create
     @diezmoanual = Diezmoanual.new(diezmoanual_params)
-
-    respond_to do |format|
-      if @diezmoanual.save
-        format.html { redirect_to @diezmoanual, notice: 'Diezmoanual was successfully created.' }
-        format.json { render :show, status: :created, location: @diezmoanual }
-      else
-        format.html { render :new }
-        format.json { render json: @diezmoanual.errors, status: :unprocessable_entity }
-      end
-    end
+    render action: :new unless @diezmoanual.save
   end
 
   # PATCH/PUT /diezmoanuals/1
   # PATCH/PUT /diezmoanuals/1.json
   def update
-    respond_to do |format|
-      if @diezmoanual.update(diezmoanual_params)
-        format.html { redirect_to @diezmoanual, notice: 'Diezmoanual was successfully updated.' }
-        format.json { render :show, status: :ok, location: @diezmoanual }
-      else
-        format.html { render :edit }
-        format.json { render json: @diezmoanual.errors, status: :unprocessable_entity }
-      end
-    end
+        render action: :edit unless @diezmoanual.update_attributes(diezmoanual_params)
   end
 
   # DELETE /diezmoanuals/1

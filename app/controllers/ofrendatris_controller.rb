@@ -10,6 +10,7 @@ class OfrendatrisController < ApplicationController
   # GET /ofrendatris/1
   # GET /ofrendatris/1.json
   def show
+    @ofrendatris = Ofrendatri.find(params[:id])
   end
 
   # GET /ofrendatris/new
@@ -19,36 +20,20 @@ class OfrendatrisController < ApplicationController
 
   # GET /ofrendatris/1/edit
   def edit
+    @ofrendatris = Ofrendatri.find(params[:id])
   end
 
   # POST /ofrendatris
   # POST /ofrendatris.json
   def create
     @ofrendatri = Ofrendatri.new(ofrendatri_params)
-
-    respond_to do |format|
-      if @ofrendatri.save
-        format.html { redirect_to @ofrendatri, notice: 'Ofrendatri was successfully created.' }
-        format.json { render :show, status: :created, location: @ofrendatri }
-      else
-        format.html { render :new }
-        format.json { render json: @ofrendatri.errors, status: :unprocessable_entity }
-      end
-    end
+    render action: :new unless @ofrendatri.save
   end
 
   # PATCH/PUT /ofrendatris/1
   # PATCH/PUT /ofrendatris/1.json
   def update
-    respond_to do |format|
-      if @ofrendatri.update(ofrendatri_params)
-        format.html { redirect_to @ofrendatri, notice: 'Ofrendatri was successfully updated.' }
-        format.json { render :show, status: :ok, location: @ofrendatri }
-      else
-        format.html { render :edit }
-        format.json { render json: @ofrendatri.errors, status: :unprocessable_entity }
-      end
-    end
+   render action: :edit unless @ofrendatri.update_attributes(ofrendatri_params)
   end
 
   # DELETE /ofrendatris/1

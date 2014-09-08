@@ -7,6 +7,7 @@ class OfrendadiaController < ApplicationController
 
  
   def show
+    @ofrendadium = Ofrendadium.find(params[:id])
   end
 
   
@@ -16,34 +17,18 @@ class OfrendadiaController < ApplicationController
 
  
   def edit
+    @ofrendadium = Ofrendadium.find(params[:id])
   end
 
   def create
     @ofrendadium = Ofrendadium.new(ofrendadium_params)
-
-    respond_to do |format|
-      if @ofrendadium.save
-        format.html { redirect_to @ofrendadium, notice: 'Ofrendadium was successfully created.' }
-        format.json { render :show, status: :created, location: @ofrendadium }
-      else
-        format.html { render :new }
-        format.json { render json: @ofrendadium.errors, status: :unprocessable_entity }
-      end
-    end
+    render action: :new unless @ofrendadium.save
   end
 
   # PATCH/PUT /ofrendadia/1
   # PATCH/PUT /ofrendadia/1.json
   def update
-    respond_to do |format|
-      if @ofrendadium.update(ofrendadium_params)
-        format.html { redirect_to @ofrendadium, notice: 'Ofrendadium was successfully updated.' }
-        format.json { render :show, status: :ok, location: @ofrendadium }
-      else
-        format.html { render :edit }
-        format.json { render json: @ofrendadium.errors, status: :unprocessable_entity }
-      end
-    end
+     render action: :edit unless @ofrendadium.update_attributes(ofrendadium_params)
   end
 
   # DELETE /ofrendadia/1

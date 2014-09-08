@@ -1,0 +1,17 @@
+ <tr id=<%="ofrendadium_#{ofrendadium.id}"%>>
+       <tr>
+        <td><%= link_to ofrendadium.id, ofrendadium_path(ofrendadium) %></td>
+        <td><%= ofrendadium.valor %></td>
+        <td><%= ofrendadium.dia %></td>
+        <td><%=l ofrendadium.created_at %></td>
+        <td>
+          <%= link_to t('.edit', :default => t("helpers.links.edit")),
+                      edit_ofrendadium_path(ofrendadium), remote: true, :class => 'btn btn-mini' %>
+          <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                      ofrendadium_path(ofrendadium),
+                      :method => :delete,
+                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                      :class => 'btn btn-mini btn-danger' %>
+        </td>
+  </tr>
+   

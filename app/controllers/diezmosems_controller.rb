@@ -10,6 +10,7 @@ class DiezmosemsController < ApplicationController
   # GET /diezmosems/1
   # GET /diezmosems/1.json
   def show
+    @diezmosems = Diezmosem.find(params[:id])
   end
 
   # GET /diezmosems/new
@@ -19,36 +20,20 @@ class DiezmosemsController < ApplicationController
 
   # GET /diezmosems/1/edit
   def edit
+    @diezmosems = Diezmosem.find(params[:id])
   end
 
   # POST /diezmosems
   # POST /diezmosems.json
   def create
     @diezmosem = Diezmosem.new(diezmosem_params)
-
-    respond_to do |format|
-      if @diezmosem.save
-        format.html { redirect_to @diezmosem, notice: 'Diezmosem was successfully created.' }
-        format.json { render :show, status: :created, location: @diezmosem }
-      else
-        format.html { render :new }
-        format.json { render json: @diezmosem.errors, status: :unprocessable_entity }
-      end
-    end
+    render action: :new unless @diezmosem.save
   end
 
   # PATCH/PUT /diezmosems/1
   # PATCH/PUT /diezmosems/1.json
   def update
-    respond_to do |format|
-      if @diezmosem.update(diezmosem_params)
-        format.html { redirect_to @diezmosem, notice: 'Diezmosem was successfully updated.' }
-        format.json { render :show, status: :ok, location: @diezmosem }
-      else
-        format.html { render :edit }
-        format.json { render json: @diezmosem.errors, status: :unprocessable_entity }
-      end
-    end
+    render action: :edit unless @diezmosem.update_attributes(diezmosem_params)
   end
 
   # DELETE /diezmosems/1

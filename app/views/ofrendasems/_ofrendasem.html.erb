@@ -1,0 +1,16 @@
+  <tr id=<%="ofrendasem_#{ofrendasem.id}"%>>
+      <tr>
+        <td><%= link_to ofrendasem.id, ofrendasem_path(ofrendasem) %></td>
+        <td><%= ofrendasem.valor %></td>
+        <td><%= ofrendasem.dia %></td>
+        <td><%=l ofrendasem.created_at %></td>
+        <td>
+          <%= link_to t('.edit', :default => t("helpers.links.edit")),
+                      edit_ofrendasem_path(ofrendasem),remote: true, :class => 'btn btn-mini' %>
+          <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                      ofrendasem_path(ofrendasem),
+                      :method => :delete,
+                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                      :class => 'btn btn-mini btn-danger' %>
+        </td>
+      </tr>

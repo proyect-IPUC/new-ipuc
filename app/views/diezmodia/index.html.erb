@@ -13,28 +13,12 @@
     </tr>
   </thead>
   <tbody>
-    <% @diezmodia.each do |diezmodium| %>
-      <tr>
-        <td><%= link_to diezmodium.id, diezmodium_path(diezmodium) %></td>
-        <td><%= diezmodium.valor %></td>
-        <td><%= diezmodium.dia %></td>
-        <td><%=l diezmodium.created_at %></td>
-        <td>
-          <%= link_to t('.edit', :default => t("helpers.links.edit")),
-                      edit_diezmodium_path(diezmodium), :class => 'btn btn-mini' %>
-          <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
-                      diezmodium_path(diezmodium),
-                      :method => :delete,
-                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
-                      :class => 'btn btn-mini btn-danger' %>
-        </td>
-      </tr>
-    <% end %>
+       <%= render @diezmodium %>
   </tbody>
 </table>
 
 <%= link_to t('.new', :default => t("helpers.links.new")),
-            new_diezmodium_path,
+            new_diezmodium_path, remote: true,
             :class => 'btn btn-primary' %>
 
 

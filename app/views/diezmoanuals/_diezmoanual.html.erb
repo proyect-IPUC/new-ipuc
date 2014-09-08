@@ -1,0 +1,17 @@
+<tr id=<%="diezmoanual_#{diezmoanual.id}"%>>
+       <tr>
+        <td><%= link_to diezmoanual.id, diezmoanual_path(diezmoanual) %></td>
+        <td><%= diezmoanual.valor %></td>
+        <td><%= diezmoanual.año %></td>
+        <td><%=l diezmoanual.created_at %></td>
+        <td>
+          <%= link_to t('.edit', :default => t("helpers.links.edit")),
+                      edit_diezmoanual_path(diezmoanual), remote: true, :class => 'btn btn-mini' %>
+          <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                      diezmoanual_path(diezmoanual),
+                      :method => :delete,
+                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                      :class => 'btn btn-mini btn-danger' %>
+        </td>
+      </tr>
+    
