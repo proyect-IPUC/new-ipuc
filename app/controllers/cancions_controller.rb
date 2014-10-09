@@ -12,14 +12,6 @@ class CancionsController < ApplicationController
   # GET /cancions/1.json
   def show
     @cancion = Cancion.find(params[:id])
-    respond_to do |format|
-      format.html
-      format.pdf do
-        pdf = CancionPdf.new(@cancion)
-        send_data pdf.render, filename: "cancion_#{@cancion_number}.pdf",
-                              type: "application/pdf"
-      end
-    end
   end
 
   
@@ -31,36 +23,20 @@ class CancionsController < ApplicationController
 
   # GET /cancions/1/edit
   def edit
+    @cancions = Cancion.find(params[:id])
   end
 
   # POST /cancions
   # POST /cancions.json
   def create
     @cancion = Cancion.new(cancion_params)
-
-    respond_to do |format|
-      if @cancion.save
-        format.html { redirect_to @cancion, notice: 'Cancion Creada Exitosamente.' }
-        format.json { render :show, status: :created, location: @cancion }
-      else
-        format.html { render :new }
-        format.json { render json: @cancion.errors, status: :unprocessable_entity }
-      end
-    end
+    render action: :new unless @cancion.save
   end
 
   # PATCH/PUT /cancions/1
   # PATCH/PUT /cancions/1.json
   def update
-    respond_to do |format|
-      if @cancion.update(cancion_params)
-        format.html { redirect_to @cancion, notice: 'Cancion Modificada Exitosamente.' }
-        format.json { render :show, status: :ok, location: @cancion }
-      else
-        format.html { render :edit }
-        format.json { render json: @cancion.errors, status: :unprocessable_entity }
-      end
-    end
+    render action: :edit unless @cancion.update_attributes(cancion_params)
   end
 
   # DELETE /cancions/1

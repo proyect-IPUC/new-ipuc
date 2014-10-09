@@ -1,17 +1,10 @@
 <%= simple_form_for [@directiva,@modulo], :html => { :class => 'form-horizontal' } do |f| %>
-  <%= f.collection_select :membrecium_id, Membrecium.all, :id, :nombre, class: "form-control", prompt: "ingrese el nombre del miembro" %>
+  <%= f.collection_select :membrecium_id, Membrecium.all, :id, :nombre, class: "form-control" %>
   <br>
   <br>
   <br>
-  <%= f.input :cargo %>
-  <select>
-  <option value="Presid">Presidente</option>
-  <option value="vicep">Vicepresidente</option>
-  <option value="secre">Secretari@</option>
-  <option value="tesore">Tesorer@</option>
-  <option value="vocal">Vocal</option>
-  <option value="auxi">Auxiliar</option>
-   </select> 
+  <%= f.text_field :cargo %>
+ 
   
   <div class="form-actions">
     <%= f.button :submit, :class => 'btn-primary' %>

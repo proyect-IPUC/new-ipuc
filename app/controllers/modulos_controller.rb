@@ -1,7 +1,7 @@
 class ModulosController < ApplicationController
-  before_action :set_modulo, only: [:show, :edit, :update, :destroy, :index, :new, :create]
+  
   load_and_authorize_resource
-
+  before_action :set_modulo, only: [:show, :edit, :update, :destroy, :index, :new, :create]
   # GET /modulos
   # GET /modulos.json
   def index

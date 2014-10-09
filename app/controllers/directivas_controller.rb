@@ -1,6 +1,6 @@
 class DirectivasController < ApplicationController
   before_action :set_directiva, only: [:show, :edit, :update, :destroy]
-  load_and_authorize_resource
+
 
   # GET /directivas
   # GET /directivas.json

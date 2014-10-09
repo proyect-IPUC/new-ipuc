@@ -32,7 +32,7 @@
   <tbody>
     <% @modulos.each do |modulo| %>
       <tr>
-        <td><%= link_to modulo.id  %></td>
+        <td><%= link_to modulo.id, directiva_modulo_path(@directiva,modulo)  %></td>
         <td><%= modulo.membrecium.nombre rescue nil%></td>
         <td><%= modulo.membrecium.nombre%></td>
         <td><%= link_to t('.show', :default => t("helpers.links.Ver")),

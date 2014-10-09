@@ -24,24 +24,13 @@
     </tr>
   </thead>
   <tbody>
-    <% @cancions.each do |cancion| %>
-      <tr>
-        <td><%= link_to cancion.id %></td>
-        <td><%= cancion.cancion %></td>
-        <td><%= cancion.genero %></td>
-        <td><%= cancion.artista %></td>
-        <td><%= link_to t('.show', :default => t("helpers.links.Ver")),
-                      cancion_path(cancion), :class => 'btn btn-success' %></td>
-        <td><%=l cancion.created_at %></td>
-        
-      </tr>
-    <% end %>
+      <%= render @cancions %>
   </tbody>
 </table>
 
 <%= link_to t('.new', :default => t("helpers.links.Nuevo")),
             new_cancion_path,
-            :class => 'btn btn-primary' %>
+            :class => 'btn btn-primary', remote: true %>
 <%= will_paginate @cancions, :previous_label => '&laquo; Anterior', :next_label => 'Siguiente &raquo;' %>
 <br>
 Cancions: <%= @cancions.count %>
